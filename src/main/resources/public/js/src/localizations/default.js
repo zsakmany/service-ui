@@ -114,6 +114,7 @@ define(['util'], function () {
             previous: "Previous",
             next: "Next",
             warning: "WARNING",
+            warningSm: "warning",
             toolname: "Report Portal",
             sec: "sec",
             month: "month",
@@ -234,6 +235,7 @@ define(['util'], function () {
             },
             header: {
                 btnLogin: 'Login',
+                forkGithub: 'Fork on',
                 returnToRP: 'Return to RP',
                 linkFeatures: 'Benefits',
                 linkAutoAnalysis: 'Accelerated analysis',
@@ -935,6 +937,15 @@ define(['util'], function () {
             generalTab: "General",
             notificationsTab: "Notifications",
             btsTab: "Bug Tracking System",
+            demoDataSettings: 'Demo Data',
+            generateDemoData: 'Generate Demo Data',
+            generateDemoDataTitle: 'the system will generate the following demo data:',
+            generateDemoDataLaunches: '10 Launches',
+            generateDemoDataDashboard: '1 Dashboard with 9 Widgets',
+            generateDemoDataFilter: '1 Filter',
+            postfixLabel: 'Postfix will be added to the demo dashboard, widgets, filter name',
+            removeDemoData: 'You will have to remove the Demo Data manually.',
+            postfixPlaceHolder: 'Enter Postfix',
             beta: "beta",
             aboutinfo: 'Detailed information about the project',
             unableLoadData: 'Unable to load data',
@@ -973,7 +984,8 @@ define(['util'], function () {
             LinkResetToDefaultColors: 'Reset to Default Colors',
 
             ruleDeleted: 'Rule will be deleted after submit',
-            noCustomDefectsWereAdded: 'No custom defects were added'
+            noCustomDefectsWereAdded: 'No custom defects were added',
+            noCustomColors: 'No colors to update'
         },
 
         bts: {
@@ -1025,6 +1037,7 @@ define(['util'], function () {
             addNewProject: "Add new project",
             activeProjects: "Active projects",
             notActiveProjects: "Not active projects",
+            personalProjects: "Personal projects",
             newProject: "new",
             usersQuantity: "members",
             launchesQuantity: "launches",
@@ -1178,7 +1191,7 @@ define(['util'], function () {
             updateUuid: "UUID has been regenerated",
             addSubType: "New defect type was successfully created",
             startAnalyzeAction: 'Auto-analyzer has been started.',
-
+            generateDemoData: 'Demo Data has been generated',
             changedColorDefectTypes: "Defect types have been updated."
         },
 
@@ -1244,7 +1257,7 @@ define(['util'], function () {
             changeRole: "Failed to change user role for '%%%'",
             loadProjectInfo: "Failed to load a project information",
             submitForgotPass: "User with entered email address is not found",
-            submitForgotPassRestricted: "The password cannot be changed. Please use your domain password",
+            submitForgotPassRestricted: "Unable to change password for external user",
             submitForgotPassBrokenConf: "Email configuration is broken or switched-off. Please configure email server in Report Portal settings.",
             submitChangePass: "Failed to update password",
             submitProfileInfo: "Failed to update profile info",
@@ -1346,7 +1359,8 @@ define(['util'], function () {
             wrongSymbol: "Only Latin, numbers symbols, hyphen, underscore are possible",
             defectUniq: "Full name and Short name set should be unique",
             defectShortName: "Short name should have size from '1' to '4'",
-            defectColor: "Select color for defect type"
+            defectColor: "Select color for defect type",
+            postfixLength: "'Postfix should have size from '{0}' to '{1}'"
         },
 
         forms: {

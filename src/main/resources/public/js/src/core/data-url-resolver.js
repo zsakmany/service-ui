@@ -415,6 +415,9 @@ define(['app'], function (App) {
     var postDefectTypes = function(projectId){
         return config.apiVersion + projectId + '/settings/sub-type/';
     }
+    var getExternalSystems = function() {
+        return '/composite/extensions';
+    };
     
     var getGridUrl = function (type, isDebug) {
         switch (type) {
@@ -433,6 +436,10 @@ define(['app'], function (App) {
 
     var getLaunchItemUrl = function(type, id){
         return getGridUrl(type) + '/' + id;
+    };
+
+    var postDemoDataUrl = function(){
+        return config.apiVersion + 'demo/' + config.project.projectId;
     };
 
     return {
@@ -564,7 +571,9 @@ define(['app'], function (App) {
         getGridUrl: getGridUrl,
         getLaunchItemUrl: getLaunchItemUrl,
 
-        userByEmail:userByEmail
+        userByEmail:userByEmail,
+        postDemoDataUrl: postDemoDataUrl,
+        getExternalSystems: getExternalSystems,
 
     };
 });
