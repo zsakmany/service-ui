@@ -77,17 +77,11 @@ define(function(require, exports, module) {
     (new ExternalService())
         .done(function() {
             // start app
-            call('GET', Urls.getExternalSystems())
-                .done(function(services) {
-                    config.forSettings.btsList = _.map(services, function(service) {
-                        return {name: service.toUpperCase(), value: service.toUpperCase()}
-                    });
-                    $('html').removeClass('loading');
-                    Backbone.history.start();
-                    config.userModel.ready.done(function() {
-                        config.userModel.checkAuthUrl();
-                    });
-                })
+            $('html').removeClass('loading');
+            Backbone.history.start();
+            config.userModel.ready.done(function() {
+                config.userModel.checkAuthUrl();
+            });
 
         });
 });
