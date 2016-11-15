@@ -57,9 +57,9 @@ define(function (require, exports, module) {
             project: {},
             projectId: null,
             defaultProjectsSettings: {
-                listView: 'tpl-admin-projects-tile-view',
-                sorting: 'creationDate',
-                sortingDirection: 'desc',
+                listView: 'list',
+                sorting: 'name',
+                sortingDirection: 'asc',
                 search: ''
             },
             currentProjectsSettings: {
@@ -81,7 +81,7 @@ define(function (require, exports, module) {
             accountRolesEnum: {user: 'USER', administrator: 'ADMINISTRATOR'},
             accountTypesEnum: {internal: "INTERNAL"},
             btsEnum: {jira: "JIRA", tfs: "TFS", rally: "RALLY"},
-            demoProjectName: "default_project",
+            demoProjectName: "",  //TODO remove all
             breadcrumbMode: {expanded: 'expanded'},
             commentAnchor: '',
 

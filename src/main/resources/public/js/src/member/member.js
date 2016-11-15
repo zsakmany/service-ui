@@ -105,7 +105,7 @@ define(function(require, exports, module) {
         getMembersDataObject: function () {
             var data = {
                 container: this.membersTab,
-                isDefaultProject: config.project.projectId === config.demoProjectName
+                // isDefaultProject: config.project.projectId === config.demoProjectName
             };
             if (this.subContext !== "invite") {
                 data.projectId = config.project.projectId;
@@ -552,7 +552,7 @@ define(function(require, exports, module) {
             this.roles = Util.getRolesMap();
             this.memberAction = options.memberAction;
             this.projectRoleIndex = options.projectRoleIndex;
-            this.isDefaultProject = options.isDefaultProject;
+            // this.isDefaultProject = options.isDefaultProject;
             this.isGrandAdmin = options.grandAdmin;
             this.pageType = 'PaginateProjectMembers_' + this.memberAction + '_' + this.projectId;
             this.appModel = new SingletonAppModel();
@@ -569,6 +569,7 @@ define(function(require, exports, module) {
             this.$el.html(Util.templates(this.shellTpl, {
                 actionTpl: this.actionHeaderTpl,
                 grandAdmin: this.isGrandAdmin || false,
+                projectId: this.projectId,
                 util: Util,
             }));
             this.$members = $("#membersList", this.$el);
@@ -725,7 +726,7 @@ define(function(require, exports, module) {
                 isGrandAdmin: this.isGrandAdmin,
                 defaultRole: this.defaultRole,
                 projectRoleIndex: this.projectRoleIndex,
-                isDefaultProject: this.isDefaultProject
+                // isDefaultProject: this.isDefaultProject
             };
         },
         renderContent: function (members, action) {
@@ -766,10 +767,10 @@ define(function(require, exports, module) {
                             member.userRole = newRole;
                             var data = self.getRenderObject([member]);
                             el.closest('.rp-table-row').replaceWith(Util.templates(self.membersTpl, data));
-                            Util.ajaxSuccessMessenger("changeRole", member.full_name);
+                            Util.ajaxSuccessMessenger("changeRole", member.full_name || member.userId);
                         })
                         .fail(function (error) {
-                            Util.ajaxFailMessenger(error, "changeRole", member.full_name);
+                            Util.ajaxFailMessenger(error, "changeRole", member.full_name || member.userId);
                         });
 
                 }.bind(this),
@@ -817,7 +818,7 @@ define(function(require, exports, module) {
                     }
 
                     Util.flipActiveLi(el);
-                    Util.ajaxSuccessMessenger('updateProjectRole', member.full_name);
+                    Util.ajaxSuccessMessenger('updateProjectRole', member.full_name || member.userId);
                 })
                 .fail(function (error) {
                     Util.ajaxFailMessenger(error, "updateProjectRole");

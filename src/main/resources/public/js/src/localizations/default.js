@@ -254,7 +254,7 @@ define(['util'], function () {
                 titleNoRefactoring: 'Team work',
                 descLiveVisibility: 'Into your test automation status',
                 descReduceEffort: 'Accelerate results analysis leveraging historical data',
-                descSupportsTools: 'Out of the box integration width mainstream automation and bugtracking',
+                descSupportsTools: 'Out of the box integration with mainstream automation and bugtracking',
                 descNiceReports: 'Out of the box analytics and custom dashboards',
                 descEasyIntegrate: 'Integrate your existing automation results in same day. On premise or cloud',
                 descNoRefactoring: 'Collaborative environment for your entire team',
@@ -948,7 +948,7 @@ define(['util'], function () {
             removeDemoData: 'You will have to remove the Demo Data manually.',
             postfixPlaceHolder: 'Enter Postfix',
             posfixUniq: 'Postfix already used or not align with already existing data. Please use another one',
-            generationDataInProgress: 'Data generation in the process. The process can take several minutes, please wait.',
+            generationDataInProgress: 'Data generation is started. The process can take several minutes, please wait.',
             beta: "beta",
             aboutinfo: 'Detailed information about the project',
             unableLoadData: 'Unable to load data',
@@ -1086,7 +1086,12 @@ define(['util'], function () {
             noLaunchesPerformed: "No launches were performed at the selected period",
             titleAllProjects: "All Projects",
             titleMembers: "Members",
-            titleSettings: "Settings"
+            titleSettings: "Settings",
+            internalProjects: 'Internal projects',
+            personalProjects: 'Personal projects',
+            searchByName: "Search by Name",
+            TLS: 'TLS',
+            SSL: 'SSL'
         },
 
         members: {
@@ -1103,6 +1108,7 @@ define(['util'], function () {
             successAddUser: "New account has been created successfully",
             viewEmail: "View email",
             nameLoginEmail: "Name, login, e-mail",
+            searchNameLogin: "Search by Name, Login",
             searchNameLoginEmail: "Search by Name, Login, Email",
             searchName: "Search by Name",
             unAssignTitle: "Remove member from the team",
