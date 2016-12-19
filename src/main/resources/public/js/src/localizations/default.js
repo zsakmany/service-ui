@@ -3,7 +3,7 @@
  * 
  * 
  * This file is part of EPAM Report Portal.
- * https://github.com/epam/ReportPortal
+ * https://github.com/reportportal/service-ui
  * 
  * Report Portal is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -84,7 +84,7 @@ define(['util'], function () {
             lockedTitle: "Role can't be changed, since user have ADMIN privileges",
             more: "more...",
             wrongCredentials: "user name or password is incorrect",
-            wronglength: "Login must be between 4 and 128 characters.",
+            wronglength: "Login must be to 128 characters.",
             wrongcharacters: "Login should contain only any Latin, numeric characters, symbols: hyphen, underscore.",
             wrongsignin: "You need to sign in before continuing",
             wrongrelogin: "Can't get user info. Please relogin",
@@ -1016,7 +1016,8 @@ define(['util'], function () {
             linkToIssue: "Link to Issue",
             addMoreIssues: "Add more issues",
             btsInstances: "Bts Instances:",
-            btsAddNewInstance: "Add New Instance"
+            btsAddNewInstance: "Add New Instance",
+            btsNotFound: 'To configure Bug Tracking System, please deploy appropriate micro-service',
         },
 
         admin: {
@@ -1043,7 +1044,9 @@ define(['util'], function () {
             personalProjects: "Personal projects",
             newProject: "new",
             usersQuantity: "members",
+            usersQuantitySingular: "member",
             launchesQuantity: "launches",
+            launchesQuantitySingular: "launch",
             lastRunPrefix: "Run ",
             lastRunSuffix: "0 days ago",
             goToProject: "Open",
@@ -1081,7 +1084,8 @@ define(['util'], function () {
             launches: " launches",
             launch: " launch",
             members: "member",
-            launchesAverage: "launch average per week",
+            launchesAverage: "launches average per week",
+            launchesAverageSingular: "launch average per week",
             uniqueBugs: "unique bug posted",
             noLaunchesPerformed: "No launches were performed at the selected period",
             titleAllProjects: "All Projects",
@@ -1091,7 +1095,8 @@ define(['util'], function () {
             personalProjects: 'Personal projects',
             searchByName: "Search by Name",
             TLS: 'TLS',
-            SSL: 'SSL'
+            SSL: 'SSL',
+            emailError: 'Test connection was failed:'
         },
 
         members: {
@@ -1322,14 +1327,14 @@ define(['util'], function () {
             dashboardNameDuplication: "This name is already in use",
             widgetNameDuplication: "This widget name is already in use",
             descriptionsSize: "Descriptions should have size not more than 1024",
-            loginSize: "Login should have size from '{0}' to '{1}'.",
+            loginSize: 'Login should have size to {1}.',//"Login should have size from '{0}' to '{1}'.",
             fullNameSize: "Full name should have size from '{0}' to '{1}'.",
             passwordSize: "Password should have size from '{0}' to '{1}'.",
             incorrectEmail: "Email is incorrect. Please enter correct email.",
             registeredEmail: "Entered email already exists in the system.",
             registeredLogin: "Entered login already exists in the system.",
             confirmPassword: "Password and confirm password do not match.",
-            memberNameLength: "Member name should have size from '3' to '128'",
+            memberNameLength: "Member name should have size from '1' to '128'",
             filterNameMax: "Filter name should have size up to '55'",
             fullNameRegex: "Only Latin, numbers symbols, underscore, dash, dot, space are possible",
             mergeNameLength: "Field name should have size from '3' to '256'",
@@ -1344,6 +1349,7 @@ define(['util'], function () {
             launchDescriptionLength: "Description should have size not more than 1024 symbols",
 
             emailMatchRegex: "Check the entered email",
+            emailNotificationLength: "Email should have size from '{0}' to '{1}'.",
             emailInternalRegex: "The password cannot be changed. Please use you domain password.",
             confirmMinMax: "Password should have size from '4' to '25' symbols",
             confirmMatch: "Passwords do not match",
@@ -1407,7 +1413,7 @@ define(['util'], function () {
             accountRole: "Account role",
             selectProject: "Select a project",
             symbolsForName: "3-256 symbols, Latin, Cyrillic, numeric characters, symbols: hyphen, underscore, dot, space.",
-            symbolsForLogin: "4-128 symbols, Latin, numeric characters, symbols: hyphen, underscore.",
+            symbolsForLogin: "1-128 symbols, Latin, numeric characters, symbols: hyphen, underscore.",
             symbolsForPass: "4-25 symbols.",
             passwordSize: 'Password should have size from "4" to "25".',
             passwordEmpty: "Password shouldn't be empty.",

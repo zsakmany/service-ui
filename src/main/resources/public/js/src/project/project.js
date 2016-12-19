@@ -3,7 +3,7 @@
  * 
  * 
  * This file is part of EPAM Report Portal.
- * https://github.com/epam/ReportPortal
+ * https://github.com/reportportal/service-ui
  * 
  * Report Portal is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -405,6 +405,7 @@ define(function(require, exports, module) {
                 },
                 {
                     validator: 'minMaxRequired',
+                    type: 'emailNotification',
                     min: 5,
                     max: 256
                 }
@@ -595,15 +596,16 @@ define(function(require, exports, module) {
                 recipients = caseItem.find('input.recipients'),
                 remoteUsers = [],
                 users = this.getRecipients(index),
+                minimumInputLength = config.forms.filterUser,
                 resultFound = false,
                 self = this;
 
             if (getAnyway || !recipients.hasClass('select2-offscreen')) {
                 Util.setupSelect2WhithScroll(recipients, {
                     multiple: true,
-                    minimumInputLength: 3,
+                    minimumInputLength: 1,
                     formatInputTooShort: function (input, min) {
-                        return Localization.ui.minPrefix + '3' + Localization.ui.minSufixAuto
+                        return Localization.ui.minPrefix + minimumInputLength + Localization.ui.minSufixAuto
                     },
                     formatResultCssClass: function (state) {
                         if ((remoteUsers.length == 0 || _.indexOf(remoteUsers, state.text) < 0) && $('.users-typeahead.recipients:not(input)').eq(index).find('input').val() == state.text) {
@@ -642,11 +644,11 @@ define(function(require, exports, module) {
                                 results: []
                             };
 
-                        if (queryLength >= 3) {
+                        if (queryLength >= minimumInputLength) {
                             if (queryLength > 256) {
                                 self.validateRecipients();
                             } else {
-                                if (queryLength == 256) {
+                                if (queryLength <= 256) {
                                     self.validateRecipients();
                                 }
                                 //query.term = query.term.replace(/[@#.?*+^$[\]\\(){}|-]/g, "\\$&");
@@ -1393,6 +1395,7 @@ define(function(require, exports, module) {
                 var defaultBts = config.forSettings.btsList[0];
                 if (!defaultBts) {
                     console.log('no bts');
+                    return;
                 } else {
                     this.set({systemType: defaultBts.name})
                 }
@@ -1512,7 +1515,17 @@ define(function(require, exports, module) {
             this.settings = options.settings;
             this.access = options.access;
             this.systems = options.externalSystems;
-            this.model = new BtsProperties(options.externalSystems[0]);
+            var modelData = null;
+            _.each(options.externalSystems, function(system) {
+                return _.each(config.forSettings.btsList, function(btsItem) {
+                    if(btsItem.name == system.systemType) {
+                        modelData = system;
+                        return false;
+                    }
+                })
+            })
+            // this.model = new BtsProperties(options.externalSystems[0]);
+            this.model = new BtsProperties(modelData);
             this.systemAt = 0;
         },
 
@@ -1530,9 +1543,13 @@ define(function(require, exports, module) {
             this.$instanceHead = $("#instanceHead", this.$el);
             this.$instanceBoby = $("#instanceBody", this.$el);
 
-            this.renderMultiSelector();
-            this.renderInstance();
-
+            if(config.forSettings.btsList.length) {
+                this.renderMultiSelector()
+                this.renderInstance();
+            } else {
+                $('button', this.$el).prop({disabled: 'disabled'});
+                $('[data-js-no-bts-message]', this.$el).removeClass('hide');
+            }
             return this;
         },
 
@@ -1546,7 +1563,9 @@ define(function(require, exports, module) {
                     index: this.systemAt,
                     access: this.access
                 }));
+                return true;
             }
+            return false;
         },
 
         renderInstance: function () {
@@ -1575,7 +1594,7 @@ define(function(require, exports, module) {
         },
 
         systemWithMultipleProjects: function (system) {
-            return this.settings['bts' + system].multiple;
+            return (this.settings['bts' + system] && this.settings['bts' + system].multiple);
         },
 
         changeBts: function (e) {

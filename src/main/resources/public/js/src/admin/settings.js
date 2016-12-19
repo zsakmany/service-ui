@@ -3,7 +3,7 @@
  * 
  * 
  * This file is part of EPAM Report Portal.
- * https://github.com/epam/ReportPortal
+ * https://github.com/reportportal/service-ui
  * 
  * Report Portal is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -157,6 +157,7 @@ define(function (require, exports, module) {
             });
 
             if (noErrors) {
+                this.toggleErrorMessage('hide');
                 AdminService.setAdminSettings(externalSystemData, 'default')
                     .done(function (response) {
                         var host = $("#host", self.$el);
@@ -168,8 +169,33 @@ define(function (require, exports, module) {
                         Util.ajaxSuccessMessenger('setAdminSettings');
                     })
                     .fail(function (error) {
-                        Util.ajaxFailMessenger(error, 'setAdminSettings');
+                        self.toggleErrorMessage('show', error);
+                        //Util.ajaxFailMessenger(error, 'setAdminSettings');
                     });
+            }
+        },
+
+        toggleErrorMessage: function(action, response){
+            var $errorBlock = $('[data-js-connection-error]', this.$el),
+                $errorMessage = $('[data-js-connection-message]', this.$el),
+                message = Localization.failMessages.setAdminSettings,
+                error = '';
+            if(action == 'show') {
+                $errorBlock.show();
+                if (response) {
+                    try {
+                        error = JSON.parse(response.responseText);
+                    } catch (e) {
+                    }
+                    if (error && error.message) {
+                        message = '<strong>' + Localization.admin.emailError + '</strong> ' + error.message;
+                    }
+                }
+                $errorMessage.html(message);
+            }
+            else {
+                $errorBlock.hide();
+                $errorMessage.html('');
             }
         },
 

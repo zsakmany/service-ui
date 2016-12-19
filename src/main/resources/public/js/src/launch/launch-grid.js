@@ -3,7 +3,7 @@
  * 
  * 
  * This file is part of EPAM Report Portal.
- * https://github.com/epam/ReportPortal
+ * https://github.com/reportportal/service-ui
  * 
  * Report Portal is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -1664,14 +1664,14 @@ define(function (require, exports, module) {
                 isInProgress = (item.status == 'IN_PROGRESS') ? true : false;
             if (isPassed) {
                 cls = 'rp-pass';
-            } else if (isFailed || isDefects) {
-                cls = 'rp-fail';
             } else if (isSkipped) {
-                cls = 'pr-skip';
+                cls = 'rp-skip';
             } else if (isReseted) {
                 cls = 'rp-reseted';
             } else if(isInProgress){
                 cls = 'rp-inprogress progress-striped';
+            } else if (isFailed || isDefects) {
+                cls = 'rp-fail';
             }
             return cls;
         },

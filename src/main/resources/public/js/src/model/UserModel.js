@@ -3,7 +3,7 @@
  * 
  * 
  * This file is part of EPAM Report Portal.
- * https://github.com/epam/ReportPortal
+ * https://github.com/reportportal/service-ui
  * 
  * Report Portal is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -232,8 +232,9 @@ define(function(require, exports, module) {
                     self.set({token: responce.token_type + ' ' + responce.access_token});
                     self.loginSuccess();
                 })
-                .fail(function (response) {
+                .fail(function (error) {
                     self.clearSession();
+                    Util.ajaxFailMessenger(error, 'defaults');
                 });
         },
         // don't touch
