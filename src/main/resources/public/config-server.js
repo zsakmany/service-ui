@@ -12,17 +12,26 @@ if(proxyConfig.path == '') {
 module.exports = {
     devServer: {
         contentBase: publicPath,
-        https: true,
+        // https: true,
         host: '0.0.0.0',
+        headers: { "Access-Control-Allow-Origin": "*" },
         proxy: [
             {
-                path: /^\/(composite|api|uat|ui).*/,
-                target: proxyConfig.path,
+                path: /^\/documentation\/documentation.html/,
+                // target: 'http://reportportal.io/documentation/documentation.html',
+                "target": {
+                    "host": "reportportal.io",
+                    "protocol": 'http:',
+                    "port": 80
+                },
+                secure: false,
+                changeOrigin: true,
+                ignorePath: false,
                 bypass: function (req, res, options) {
                     console.log('proxy url: ' + req.url);
                 }
             },{
-                path: /^(?!\/(composite|api|uat|ui)).*/,
+                path: /^(?!\/(documentation)).*/,
                 target: 'http:localhost:8080',
                 bypass: function (req, res, options) {
                     console.log('resource url: ' + req.url);
