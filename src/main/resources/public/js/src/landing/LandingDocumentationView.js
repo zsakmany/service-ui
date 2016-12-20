@@ -37,9 +37,13 @@ define(function(require, exports, module) {
             this.$el.html(Util.templates(this.tpl));
             container.append(this.$el);
             var self = this;
-            Util.getDocumentationHtml().done(function($documentation) {
-                docScript.init(self.idDocumentation, $documentation);
-            });
+            Util.getDocumentationHtml()
+                .done(function($documentation) {
+                    docScript.init(self.idDocumentation, $documentation);
+                })
+                .fail(function() {
+                    self.$el.addClass('documentation-is-not-available');
+                })
         },
         changeAnchor: function(id) {
             docScript.renderSection(id);

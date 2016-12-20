@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="210px" viewBox="0 0 300 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>0718E9F8-AF27-4F85-8666-8E984B65A497</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="136" height="143" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="136" height="143" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="136" height="143" rx="4"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="136" height="143" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="200" height="186" rx="5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="#Other-pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Documentation-Error" transform="translate(-519.000000, -110.000000)">
+            <g id="Illustration" transform="translate(519.000000, 110.000000)">
+                <g id="Group-5" transform="translate(164.000000, 32.000000)">
+                    <use id="bg" stroke-opacity="0.301602129" stroke="#A5C534" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="5,5" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <text id="DOCUMENTATION" opacity="0.5" font-family="BLOKK" font-size="18" font-weight="normal" fill-opacity="0.5" fill="#BED379">
+                        <tspan x="12" y="29">DOCUMENTATIO</tspan>
+                        <tspan x="12" y="40">N</tspan>
+                    </text>
+                    <text id="When-I-first-got-int" opacity="0.5" font-family="BLOKK" font-size="11" font-weight="normal" line-spacing="16" fill-opacity="0.301064312" fill="#BED379">
+                        <tspan x="12" y="40">When I first got int</tspan>
+                        <tspan x="12" y="56" font-family="LucidaGrande, Lucida Grande">лорлллллл</tspan>
+                        <tspan x="70.9101562" y="56">o the </tspan>
+                        <tspan x="12" y="72">online advertising </tspan>
+                        <tspan x="12" y="88">business, I was </tspan>
+                        <tspan x="12" y="104">looking forthe </tspan>
+                        <tspan x="12" y="120">magical combinatio </tspan>
+                        <tspan x="12" y="136">that wouldwebsite </tspan>
+                        <tspan x="12" y="152">into the top search </tspan>
+                        <tspan x="12" y="168"></tspan>
+                        <tspan x="12" y="184">engine rankings, </tspan>
+                        <tspan x="12" y="200">catapult me to the </tspan>
+                        <tspan x="12" y="216">forefront of the </tspan>
+                        <tspan x="12" y="232">minds or individuals </tspan>
+                        <tspan x="12" y="248">looking to buy my </tspan>
+                        <tspan x="12" y="264">product, and </tspan>
+                        <tspan x="12" y="280">generally make me </tspan>
+                        <tspan x="12" y="296">rich beyond my </tspan>
+                        <tspan x="12" y="312">wildest dreams! After </tspan>
+                        <tspan x="12" y="328">succeeding in the </tspan>
+                        <tspan x="12" y="344">business for this </tspan>
+                        <tspan x="12" y="360">long, I’m able to look </tspan>
+                        <tspan x="12" y="376">back on my old self </tspan>
+                        <tspan x="12" y="392">with this kind of </tspan>
+                        <tspan x="12" y="408">thinking and shake my </tspan>
+                        <tspan x="12" y="424">head. If you’re </tspan>
+                        <tspan x="12" y="440">reading this article </tspan>
+                        <tspan x="12" y="456">and you’ve come this </tspan>
+                        <tspan x="12" y="472">far, you’re probably </tspan>
+                        <tspan x="12" y="488">looking for the magic </tspan>
+                        <tspan x="12" y="504">answer yourself. </tspan>
+                        <tspan x="12" y="520">You’ve probably read </tspan>
+                        <tspan x="12" y="536">a few dozen or a few </tspan>
+                        <tspan x="12" y="552">hundred articles just </tspan>
+                        <tspan x="12" y="568">like this about pay-</tspan>
+                        <tspan x="12" y="584">per-click </tspan>
+                        <tspan x="12" y="600">advertising, </tspan>
+                        <tspan x="12" y="616">maximizing return on </tspan>
+                        <tspan x="12" y="632">investment, keyword </tspan>
+                        <tspan x="12" y="648">stuffing, black-hat </tspan>
+                        <tspan x="12" y="664">seo tactics, text-</tspan>
+                        <tspan x="12" y="680">link banner </tspan>
+                        <tspan x="12" y="696">exchanges, and the </tspan>
+                        <tspan x="12" y="712">list goes on. Well, </tspan>
+                        <tspan x="12" y="728">I’m here to tell you </tspan>
+                        <tspan x="12" y="744">that I have the one be </tspan>
+                        <tspan x="12" y="760">all end all answer and </tspan>
+                        <tspan x="12" y="776">I’m sharing it with </tspan>
+                        <tspan x="12" y="792">the world! The truth </tspan>
+                        <tspan x="12" y="808">is that there is no </tspan>
+                        <tspan x="12" y="824">magic secret to </tspan>
+                        <tspan x="12" y="840">online advertising. </tspan>
+                        <tspan x="12" y="856">No one method will </tspan>
+                        <tspan x="12" y="872">generate the largest </tspan>
+                        <tspan x="12" y="888">amount of income/</tspan>
+                        <tspan x="12" y="904">exposure for every </tspan>
+                        <tspan x="12" y="920">website or business </tspan>
+                        <tspan x="12" y="936">imaginable </tspan>
+                        <tspan x="69.75" y="936" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="75.25" y="936"> it’s all </tspan>
+                        <tspan x="12" y="952">a matter of trial and </tspan>
+                        <tspan x="12" y="968">error, time and </tspan>
+                        <tspan x="12" y="984">talent. That’s a </tspan>
+                        <tspan x="12" y="1000">pretty weak answer, I </tspan>
+                        <tspan x="12" y="1016">know. It would have </tspan>
+                        <tspan x="12" y="1032">been much cooler for </tspan>
+                        <tspan x="12" y="1048">me to tell you that </tspan>
+                        <tspan x="12" y="1064">buying tiny </tspan>
+                        <tspan x="12" y="1080">classified ads in </tspan>
+                        <tspan x="12" y="1096">your local paper was </tspan>
+                        <tspan x="12" y="1112">the key to success and </tspan>
+                        <tspan x="12" y="1128">riches. Well, I’m </tspan>
+                        <tspan x="12" y="1144">sorry. For the few of </tspan>
+                        <tspan x="12" y="1160">you that have been </tspan>
+                        <tspan x="12" y="1176">down this road before </tspan>
+                        <tspan x="12" y="1192">and are starting to </tspan>
+                        <tspan x="12" y="1208">get it, you’ll hear a </tspan>
+                        <tspan x="12" y="1224">ring of truth in my </tspan>
+                        <tspan x="12" y="1240">words. The sooner you </tspan>
+                        <tspan x="12" y="1256">stop looking for a </tspan>
+                        <tspan x="12" y="1272">quick fix to make your </tspan>
+                        <tspan x="12" y="1288">message stick, the </tspan>
+                        <tspan x="12" y="1304">better. For what it’s </tspan>
+                        <tspan x="12" y="1320">worth, these are my </tspan>
+                        <tspan x="12" y="1336">thoughts.</tspan>
+                        <tspan x="12" y="1352"></tspan>
+                        <tspan x="12" y="1368">1) The internet has </tspan>
+                        <tspan x="12" y="1384">only been alive for a </tspan>
+                        <tspan x="12" y="1400">few short years, and </tspan>
+                        <tspan x="12" y="1416">in that time it has </tspan>
+                        <tspan x="12" y="1432">changed dramatically </tspan>
+                        <tspan x="12" y="1448">many times over. </tspan>
+                        <tspan x="12" y="1464">Remember in 1995 when </tspan>
+                        <tspan x="12" y="1480">everyone first </tspan>
+                        <tspan x="12" y="1496">discovered the cool </tspan>
+                        <tspan x="12" y="1512">little animated </tspan>
+                        <tspan x="12" y="1528">envelope .gif that </tspan>
+                        <tspan x="12" y="1544">you would click on to </tspan>
+                        <tspan x="12" y="1560">send them email? </tspan>
+                        <tspan x="12" y="1576">Where was your online </tspan>
+                        <tspan x="12" y="1592">bill-pay, instant </tspan>
+                        <tspan x="12" y="1608">messaging, and </tspan>
+                        <tspan x="12" y="1624">dynamically </tspan>
+                        <tspan x="12" y="1640">generated page </tspan>
+                        <tspan x="12" y="1656">content then? And </tspan>
+                        <tspan x="12" y="1672">only a few short years </tspan>
+                        <tspan x="12" y="1688">later you can see how </tspan>
+                        <tspan x="12" y="1704">far we’ve come and use </tspan>
+                        <tspan x="12" y="1720">that as a measure for </tspan>
+                        <tspan x="12" y="1736">how far we can go. The </tspan>
+                        <tspan x="12" y="1752">point is that the </tspan>
+                        <tspan x="12" y="1768">internet, like other </tspan>
+                        <tspan x="12" y="1784">forms of media, is a </tspan>
+                        <tspan x="12" y="1800">rapidly evolving </tspan>
+                        <tspan x="12" y="1816">monster. What works </tspan>
+                        <tspan x="12" y="1832">for online </tspan>
+                        <tspan x="12" y="1848">advertisers today </tspan>
+                        <tspan x="12" y="1864">might be completely </tspan>
+                        <tspan x="12" y="1880">ineffectual only a </tspan>
+                        <tspan x="12" y="1896">few months from now. </tspan>
+                        <tspan x="12" y="1912">That’s why the best </tspan>
+                        <tspan x="12" y="1928">advertisers are </tspan>
+                        <tspan x="12" y="1944">constantly </tspan>
+                        <tspan x="12" y="1960">researching and </tspan>
+                        <tspan x="12" y="1976">creating their own </tspan>
+                        <tspan x="12" y="1992">unique marketing </tspan>
+                        <tspan x="12" y="2008">strategies. The trick </tspan>
+                        <tspan x="12" y="2024">is to find out what </tspan>
+                        <tspan x="12" y="2040">works for you, and to </tspan>
+                        <tspan x="12" y="2056">make sure that you </tspan>
+                        <tspan x="12" y="2072">revisit it from time </tspan>
+                        <tspan x="12" y="2088">to time to tune it up </tspan>
+                        <tspan x="12" y="2104">as the market </tspan>
+                        <tspan x="12" y="2120">changes.</tspan>
+                        <tspan x="12" y="2136"></tspan>
+                        <tspan x="12" y="2152">2) You Have to Spend </tspan>
+                        <tspan x="12" y="2168">Money to Make Money. </tspan>
+                        <tspan x="12" y="2184">It’s a tired line, but </tspan>
+                        <tspan x="12" y="2200">it’s that way because </tspan>
+                        <tspan x="12" y="2216">everyone says it. </tspan>
+                        <tspan x="12" y="2232">Don’t be afraid to add </tspan>
+                        <tspan x="12" y="2248">fuel to your </tspan>
+                        <tspan x="12" y="2264">advertising fire and </tspan>
+                        <tspan x="12" y="2280">take it to another </tspan>
+                        <tspan x="12" y="2296">level. Try investing </tspan>
+                        <tspan x="12" y="2312">(note that I said </tspan>
+                        <tspan x="12" y="2328">investing and not </tspan>
+                        <tspan x="12" y="2344">spending) five, ten, </tspan>
+                        <tspan x="12" y="2360">or fifty thousand </tspan>
+                        <tspan x="12" y="2376">dollars in </tspan>
+                        <tspan x="12" y="2392">advertising. If you </tspan>
+                        <tspan x="12" y="2408">don’t jump out a </tspan>
+                        <tspan x="12" y="2424">window the first time </tspan>
+                        <tspan x="12" y="2440">you do it, you may </tspan>
+                        <tspan x="12" y="2456">walk away with a big </tspan>
+                        <tspan x="12" y="2472">smile and a little </tspan>
+                        <tspan x="12" y="2488">pocket money! The </tspan>
+                        <tspan x="12" y="2504">hard part about </tspan>
+                        <tspan x="12" y="2520">investing a big chunk </tspan>
+                        <tspan x="12" y="2536">of money is coming up </tspan>
+                        <tspan x="12" y="2552">with it in the first </tspan>
+                        <tspan x="12" y="2568">place. If you already </tspan>
+                        <tspan x="12" y="2584">have $50,000 laying </tspan>
+                        <tspan x="12" y="2600">around for </tspan>
+                        <tspan x="12" y="2616">advertising and are </tspan>
+                        <tspan x="12" y="2632">just looking for a </tspan>
+                        <tspan x="12" y="2648">place to put it, give </tspan>
+                        <tspan x="12" y="2664">me a call. If you’re </tspan>
+                        <tspan x="12" y="2680">not that lucky, try </tspan>
+                        <tspan x="12" y="2696">looking at the Small </tspan>
+                        <tspan x="12" y="2712">Business </tspan>
+                        <tspan x="12" y="2728">Administration for </tspan>
+                        <tspan x="12" y="2744">ideas on how to get a </tspan>
+                        <tspan x="12" y="2760">small business loan. </tspan>
+                        <tspan x="12" y="2776">If you don’t want to </tspan>
+                        <tspan x="12" y="2792">go farther than your </tspan>
+                        <tspan x="12" y="2808">mailbox, examine some </tspan>
+                        <tspan x="12" y="2824">of those credit </tspan>
+                        <tspan x="12" y="2840">checks your bank </tspan>
+                        <tspan x="12" y="2856">keeps sending you in </tspan>
+                        <tspan x="12" y="2872">the mail. A lot of </tspan>
+                        <tspan x="12" y="2888">people take advantage </tspan>
+                        <tspan x="12" y="2904">of their fairly </tspan>
+                        <tspan x="12" y="2920">reasonable interest </tspan>
+                        <tspan x="12" y="2936">rates to fund </tspan>
+                        <tspan x="12" y="2952">projects. 3) </tspan>
+                        <tspan x="12" y="2968">Presentation is Key. </tspan>
+                        <tspan x="12" y="2984">You’ll find that </tspan>
+                        <tspan x="12" y="3000">excellent writing </tspan>
+                        <tspan x="12" y="3016">skills and good </tspan>
+                        <tspan x="12" y="3032">marketing go hand in </tspan>
+                        <tspan x="12" y="3048">hand. As you improve </tspan>
+                        <tspan x="12" y="3064">on one, the other is </tspan>
+                        <tspan x="12" y="3080">bound to follow. </tspan>
+                        <tspan x="12" y="3096">Knowing how to write, </tspan>
+                        <tspan x="12" y="3112">and how to write well </tspan>
+                        <tspan x="12" y="3128">will give you an </tspan>
+                        <tspan x="12" y="3144">extraordinary </tspan>
+                        <tspan x="12" y="3160">advantage of the </tspan>
+                        <tspan x="12" y="3176">majority of </tspan>
+                        <tspan x="12" y="3192">individuals vying for </tspan>
+                        <tspan x="12" y="3208">your customers’ </tspan>
+                        <tspan x="12" y="3224">attention. I don’t </tspan>
+                        <tspan x="12" y="3240">know about you, but I </tspan>
+                        <tspan x="12" y="3256">get a lot of spam for </tspan>
+                        <tspan x="12" y="3272">people wanting to </tspan>
+                        <tspan x="12" y="3288">sell me their “good, </tspan>
+                        <tspan x="12" y="3304">cheap, A+ #1 $$$ rolex </tspan>
+                        <tspan x="12" y="3320">watch, discount </tspan>
+                        <tspan x="12" y="3336">Viagra, H0t s1utz, </tspan>
+                        <tspan x="12" y="3352">etc.” Needless to </tspan>
+                        <tspan x="12" y="3368">say, I have never </tspan>
+                        <tspan x="12" y="3384">purchased anything </tspan>
+                        <tspan x="12" y="3400">from them and most </tspan>
+                        <tspan x="12" y="3416">likely, neither have </tspan>
+                        <tspan x="12" y="3432">you. If you have, </tspan>
+                        <tspan x="12" y="3448">please drop me a line </tspan>
+                        <tspan x="12" y="3464">and let me know how it </tspan>
+                        <tspan x="12" y="3480">worked out. I’m </tspan>
+                        <tspan x="12" y="3496">always wondering how </tspan>
+                        <tspan x="12" y="3512">many of those are a </tspan>
+                        <tspan x="12" y="3528">scam. The emails and </tspan>
+                        <tspan x="12" y="3544">circulars that I do </tspan>
+                        <tspan x="12" y="3560">purchase from come </tspan>
+                        <tspan x="12" y="3576">from GoDaddy, </tspan>
+                        <tspan x="12" y="3592">buy.com, Google and a </tspan>
+                        <tspan x="12" y="3608">host of other </tspan>
+                        <tspan x="12" y="3624">professional </tspan>
+                        <tspan x="12" y="3640">companies that take a </tspan>
+                        <tspan x="12" y="3656">few minutes to earn my </tspan>
+                        <tspan x="12" y="3672">trust with good </tspan>
+                        <tspan x="12" y="3688">punctuation, </tspan>
+                        <tspan x="12" y="3704">grammar, and quality </tspan>
+                        <tspan x="12" y="3720">content.</tspan>
+                        <tspan x="12" y="3736"></tspan>
+                        <tspan x="12" y="3752">If you don’t have a </tspan>
+                        <tspan x="12" y="3768">talent for writing </tspan>
+                        <tspan x="12" y="3784">(and you know who you </tspan>
+                        <tspan x="12" y="3800">are) you have two </tspan>
+                        <tspan x="12" y="3816">choices: Get better </tspan>
+                        <tspan x="113.75" y="3816" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="119.25" y="3816"> </tspan>
+                        <tspan x="12" y="3832">easier said than </tspan>
+                        <tspan x="12" y="3848">done. Like most </tspan>
+                        <tspan x="12" y="3864">things, writing is </tspan>
+                        <tspan x="12" y="3880">one part talent and </tspan>
+                        <tspan x="12" y="3896">nine parts hard work. </tspan>
+                        <tspan x="12" y="3912">Take some classes, do </tspan>
+                        <tspan x="12" y="3928">peer editing </tspan>
+                        <tspan x="12" y="3944">suggestions, or send </tspan>
+                        <tspan x="12" y="3960">it to me look over </tspan>
+                        <tspan x="12" y="3976">(first ten-thousand </tspan>
+                        <tspan x="12" y="3992">submissions only).</tspan>
+                        <tspan x="12" y="4008"></tspan>
+                        <tspan x="12" y="4024">Or, get someone else </tspan>
+                        <tspan x="12" y="4040">to do it </tspan>
+                        <tspan x="53.25" y="4040" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="58.75" y="4040"> leaving </tspan>
+                        <tspan x="12" y="4056">more time for you at </tspan>
+                        <tspan x="12" y="4072">the helm. I like this </tspan>
+                        <tspan x="12" y="4088">option not only </tspan>
+                        <tspan x="12" y="4104">because it’s a time </tspan>
+                        <tspan x="12" y="4120">saver for me, but also </tspan>
+                        <tspan x="12" y="4136">because the work </tspan>
+                        <tspan x="12" y="4152">generally comes out </tspan>
+                        <tspan x="12" y="4168">better than anything </tspan>
+                        <tspan x="12" y="4184">I could have done. </tspan>
+                        <tspan x="12" y="4200">This article is an </tspan>
+                        <tspan x="12" y="4216">excellent example. I </tspan>
+                        <tspan x="12" y="4232">provided a detailed </tspan>
+                        <tspan x="12" y="4248">outline, some good </tspan>
+                        <tspan x="12" y="4264">anecdotes, and the </tspan>
+                        <tspan x="12" y="4280">strategies above and </tspan>
+                        <tspan x="12" y="4296">the copywriters at </tspan>
+                        <tspan x="12" y="4312">danifer.com did the </tspan>
+                        <tspan x="12" y="4328">rest. I made a deal </tspan>
+                        <tspan x="12" y="4344">with them to write the </tspan>
+                        <tspan x="12" y="4360">article for $149 and </tspan>
+                        <tspan x="12" y="4376">we share the </tspan>
+                        <tspan x="12" y="4392">syndication rights. </tspan>
+                        <tspan x="12" y="4408">Not bad for half an </tspan>
+                        <tspan x="12" y="4424">hour’s work. If you </tspan>
+                        <tspan x="12" y="4440">can’t afford to hire a </tspan>
+                        <tspan x="12" y="4456">pro, be courteous to </tspan>
+                        <tspan x="12" y="4472">yourself and your </tspan>
+                        <tspan x="12" y="4488">audience by simply </tspan>
+                        <tspan x="12" y="4504">re-reading your work, </tspan>
+                        <tspan x="12" y="4520">running a spell </tspan>
+                        <tspan x="12" y="4536">check, and letting </tspan>
+                        <tspan x="12" y="4552">your wife/husband/</tspan>
+                        <tspan x="12" y="4568">friend/co-worker </tspan>
+                        <tspan x="12" y="4584">look it over. You’d be </tspan>
+                        <tspan x="12" y="4600">surprised at how many </tspan>
+                        <tspan x="12" y="4616">things invisible to </tspan>
+                        <tspan x="12" y="4632">you will stand out to </tspan>
+                        <tspan x="12" y="4648">a fresh set of eyes. </tspan>
+                        <tspan x="12" y="4664">OK. That’s all I’ve </tspan>
+                        <tspan x="12" y="4680">got for now. Stay </tspan>
+                        <tspan x="12" y="4696">tuned at </tspan>
+                        <tspan x="12" y="4712">howtoadvertise.net </tspan>
+                        <tspan x="12" y="4728">for more advice on how </tspan>
+                        <tspan x="12" y="4744">to get started with </tspan>
+                        <tspan x="12" y="4760">online advertising. </tspan>
+                        <tspan x="12" y="4776">Please remember </tspan>
+                        <tspan x="12" y="4792">though that how far </tspan>
+                        <tspan x="12" y="4808">you go is up to you. </tspan>
+                        <tspan x="12" y="4824">There is no </tspan>
+                        <tspan x="12" y="4840">substitute for your </tspan>
+                        <tspan x="12" y="4856">own work and effort in </tspan>
+                        <tspan x="12" y="4872">succeeding in this </tspan>
+                        <tspan x="12" y="4888">business.</tspan>
+                    </text>
+                </g>
+                <g id="Group-5-Copy-3" transform="translate(0.000000, 32.000000)">
+                    <use id="bg" stroke-opacity="0.301602129" stroke="#A5C534" mask="url(#mask-4)" stroke-width="4" stroke-dasharray="5,5" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    <text id="DOCUMENTATION" opacity="0.5" font-family="BLOKK" font-size="18" font-weight="normal" fill-opacity="0.5" fill="#BED379">
+                        <tspan x="20" y="29">DOCUMENTATIO</tspan>
+                        <tspan x="20" y="40">N</tspan>
+                    </text>
+                    <text id="When-I-first-got-int" opacity="0.5" font-family="BLOKK" font-size="11" font-weight="normal" line-spacing="16" fill-opacity="0.301064312" fill="#BED379">
+                        <tspan x="20" y="40">When I first got int </tspan>
+                        <tspan x="20" y="56">the online </tspan>
+                        <tspan x="20" y="72">advertising </tspan>
+                        <tspan x="20" y="88">business, I was </tspan>
+                        <tspan x="20" y="104">looking forthe </tspan>
+                        <tspan x="20" y="120">magical combinatio </tspan>
+                        <tspan x="20" y="136">that wouldwebsite </tspan>
+                        <tspan x="20" y="152">into the top search </tspan>
+                        <tspan x="20" y="168"></tspan>
+                        <tspan x="20" y="184">engine rankings, </tspan>
+                        <tspan x="20" y="200">catapult me to the </tspan>
+                        <tspan x="20" y="216">forefront of the </tspan>
+                        <tspan x="20" y="232">minds or individuals </tspan>
+                        <tspan x="20" y="248">looking to buy my </tspan>
+                        <tspan x="20" y="264">product, and </tspan>
+                        <tspan x="20" y="280">generally make me </tspan>
+                        <tspan x="20" y="296">rich beyond my </tspan>
+                        <tspan x="20" y="312">wildest dreams! After </tspan>
+                        <tspan x="20" y="328">succeeding in the </tspan>
+                        <tspan x="20" y="344">business for this </tspan>
+                        <tspan x="20" y="360">long, I’m able to look </tspan>
+                        <tspan x="20" y="376">back on my old self </tspan>
+                        <tspan x="20" y="392">with this kind of </tspan>
+                        <tspan x="20" y="408">thinking and shake my </tspan>
+                        <tspan x="20" y="424">head. If you’re </tspan>
+                        <tspan x="20" y="440">reading this article </tspan>
+                        <tspan x="20" y="456">and you’ve come this </tspan>
+                        <tspan x="20" y="472">far, you’re probably </tspan>
+                        <tspan x="20" y="488">looking for the magic </tspan>
+                        <tspan x="20" y="504">answer yourself. </tspan>
+                        <tspan x="20" y="520">You’ve probably read </tspan>
+                        <tspan x="20" y="536">a few dozen or a few </tspan>
+                        <tspan x="20" y="552">hundred articles just </tspan>
+                        <tspan x="20" y="568">like this about pay-</tspan>
+                        <tspan x="20" y="584">per-click </tspan>
+                        <tspan x="20" y="600">advertising, </tspan>
+                        <tspan x="20" y="616">maximizing return on </tspan>
+                        <tspan x="20" y="632">investment, keyword </tspan>
+                        <tspan x="20" y="648">stuffing, black-hat </tspan>
+                        <tspan x="20" y="664">seo tactics, text-</tspan>
+                        <tspan x="20" y="680">link banner </tspan>
+                        <tspan x="20" y="696">exchanges, and the </tspan>
+                        <tspan x="20" y="712">list goes on. Well, </tspan>
+                        <tspan x="20" y="728">I’m here to tell you </tspan>
+                        <tspan x="20" y="744">that I have the one be </tspan>
+                        <tspan x="20" y="760">all end all answer and </tspan>
+                        <tspan x="20" y="776">I’m sharing it with </tspan>
+                        <tspan x="20" y="792">the world! The truth </tspan>
+                        <tspan x="20" y="808">is that there is no </tspan>
+                        <tspan x="20" y="824">magic secret to </tspan>
+                        <tspan x="20" y="840">online advertising. </tspan>
+                        <tspan x="20" y="856">No one method will </tspan>
+                        <tspan x="20" y="872">generate the largest </tspan>
+                        <tspan x="20" y="888">amount of income/</tspan>
+                        <tspan x="20" y="904">exposure for every </tspan>
+                        <tspan x="20" y="920">website or business </tspan>
+                        <tspan x="20" y="936">imaginable </tspan>
+                        <tspan x="77.75" y="936" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="83.25" y="936"> it’s all </tspan>
+                        <tspan x="20" y="952">a matter of trial and </tspan>
+                        <tspan x="20" y="968">error, time and </tspan>
+                        <tspan x="20" y="984">talent. That’s a </tspan>
+                        <tspan x="20" y="1000">pretty weak answer, I </tspan>
+                        <tspan x="20" y="1016">know. It would have </tspan>
+                        <tspan x="20" y="1032">been much cooler for </tspan>
+                        <tspan x="20" y="1048">me to tell you that </tspan>
+                        <tspan x="20" y="1064">buying tiny </tspan>
+                        <tspan x="20" y="1080">classified ads in </tspan>
+                        <tspan x="20" y="1096">your local paper was </tspan>
+                        <tspan x="20" y="1112">the key to success and </tspan>
+                        <tspan x="20" y="1128">riches. Well, I’m </tspan>
+                        <tspan x="20" y="1144">sorry. For the few of </tspan>
+                        <tspan x="20" y="1160">you that have been </tspan>
+                        <tspan x="20" y="1176">down this road before </tspan>
+                        <tspan x="20" y="1192">and are starting to </tspan>
+                        <tspan x="20" y="1208">get it, you’ll hear a </tspan>
+                        <tspan x="20" y="1224">ring of truth in my </tspan>
+                        <tspan x="20" y="1240">words. The sooner you </tspan>
+                        <tspan x="20" y="1256">stop looking for a </tspan>
+                        <tspan x="20" y="1272">quick fix to make your </tspan>
+                        <tspan x="20" y="1288">message stick, the </tspan>
+                        <tspan x="20" y="1304">better. For what it’s </tspan>
+                        <tspan x="20" y="1320">worth, these are my </tspan>
+                        <tspan x="20" y="1336">thoughts.</tspan>
+                        <tspan x="20" y="1352"></tspan>
+                        <tspan x="20" y="1368">1) The internet has </tspan>
+                        <tspan x="20" y="1384">only been alive for a </tspan>
+                        <tspan x="20" y="1400">few short years, and </tspan>
+                        <tspan x="20" y="1416">in that time it has </tspan>
+                        <tspan x="20" y="1432">changed dramatically </tspan>
+                        <tspan x="20" y="1448">many times over. </tspan>
+                        <tspan x="20" y="1464">Remember in 1995 when </tspan>
+                        <tspan x="20" y="1480">everyone first </tspan>
+                        <tspan x="20" y="1496">discovered the cool </tspan>
+                        <tspan x="20" y="1512">little animated </tspan>
+                        <tspan x="20" y="1528">envelope .gif that </tspan>
+                        <tspan x="20" y="1544">you would click on to </tspan>
+                        <tspan x="20" y="1560">send them email? </tspan>
+                        <tspan x="20" y="1576">Where was your online </tspan>
+                        <tspan x="20" y="1592">bill-pay, instant </tspan>
+                        <tspan x="20" y="1608">messaging, and </tspan>
+                        <tspan x="20" y="1624">dynamically </tspan>
+                        <tspan x="20" y="1640">generated page </tspan>
+                        <tspan x="20" y="1656">content then? And </tspan>
+                        <tspan x="20" y="1672">only a few short years </tspan>
+                        <tspan x="20" y="1688">later you can see how </tspan>
+                        <tspan x="20" y="1704">far we’ve come and use </tspan>
+                        <tspan x="20" y="1720">that as a measure for </tspan>
+                        <tspan x="20" y="1736">how far we can go. The </tspan>
+                        <tspan x="20" y="1752">point is that the </tspan>
+                        <tspan x="20" y="1768">internet, like other </tspan>
+                        <tspan x="20" y="1784">forms of media, is a </tspan>
+                        <tspan x="20" y="1800">rapidly evolving </tspan>
+                        <tspan x="20" y="1816">monster. What works </tspan>
+                        <tspan x="20" y="1832">for online </tspan>
+                        <tspan x="20" y="1848">advertisers today </tspan>
+                        <tspan x="20" y="1864">might be completely </tspan>
+                        <tspan x="20" y="1880">ineffectual only a </tspan>
+                        <tspan x="20" y="1896">few months from now. </tspan>
+                        <tspan x="20" y="1912">That’s why the best </tspan>
+                        <tspan x="20" y="1928">advertisers are </tspan>
+                        <tspan x="20" y="1944">constantly </tspan>
+                        <tspan x="20" y="1960">researching and </tspan>
+                        <tspan x="20" y="1976">creating their own </tspan>
+                        <tspan x="20" y="1992">unique marketing </tspan>
+                        <tspan x="20" y="2008">strategies. The trick </tspan>
+                        <tspan x="20" y="2024">is to find out what </tspan>
+                        <tspan x="20" y="2040">works for you, and to </tspan>
+                        <tspan x="20" y="2056">make sure that you </tspan>
+                        <tspan x="20" y="2072">revisit it from time </tspan>
+                        <tspan x="20" y="2088">to time to tune it up </tspan>
+                        <tspan x="20" y="2104">as the market </tspan>
+                        <tspan x="20" y="2120">changes.</tspan>
+                        <tspan x="20" y="2136"></tspan>
+                        <tspan x="20" y="2152">2) You Have to Spend </tspan>
+                        <tspan x="20" y="2168">Money to Make Money. </tspan>
+                        <tspan x="20" y="2184">It’s a tired line, but </tspan>
+                        <tspan x="20" y="2200">it’s that way because </tspan>
+                        <tspan x="20" y="2216">everyone says it. </tspan>
+                        <tspan x="20" y="2232">Don’t be afraid to add </tspan>
+                        <tspan x="20" y="2248">fuel to your </tspan>
+                        <tspan x="20" y="2264">advertising fire and </tspan>
+                        <tspan x="20" y="2280">take it to another </tspan>
+                        <tspan x="20" y="2296">level. Try investing </tspan>
+                        <tspan x="20" y="2312">(note that I said </tspan>
+                        <tspan x="20" y="2328">investing and not </tspan>
+                        <tspan x="20" y="2344">spending) five, ten, </tspan>
+                        <tspan x="20" y="2360">or fifty thousand </tspan>
+                        <tspan x="20" y="2376">dollars in </tspan>
+                        <tspan x="20" y="2392">advertising. If you </tspan>
+                        <tspan x="20" y="2408">don’t jump out a </tspan>
+                        <tspan x="20" y="2424">window the first time </tspan>
+                        <tspan x="20" y="2440">you do it, you may </tspan>
+                        <tspan x="20" y="2456">walk away with a big </tspan>
+                        <tspan x="20" y="2472">smile and a little </tspan>
+                        <tspan x="20" y="2488">pocket money! The </tspan>
+                        <tspan x="20" y="2504">hard part about </tspan>
+                        <tspan x="20" y="2520">investing a big chunk </tspan>
+                        <tspan x="20" y="2536">of money is coming up </tspan>
+                        <tspan x="20" y="2552">with it in the first </tspan>
+                        <tspan x="20" y="2568">place. If you already </tspan>
+                        <tspan x="20" y="2584">have $50,000 laying </tspan>
+                        <tspan x="20" y="2600">around for </tspan>
+                        <tspan x="20" y="2616">advertising and are </tspan>
+                        <tspan x="20" y="2632">just looking for a </tspan>
+                        <tspan x="20" y="2648">place to put it, give </tspan>
+                        <tspan x="20" y="2664">me a call. If you’re </tspan>
+                        <tspan x="20" y="2680">not that lucky, try </tspan>
+                        <tspan x="20" y="2696">looking at the Small </tspan>
+                        <tspan x="20" y="2712">Business </tspan>
+                        <tspan x="20" y="2728">Administration for </tspan>
+                        <tspan x="20" y="2744">ideas on how to get a </tspan>
+                        <tspan x="20" y="2760">small business loan. </tspan>
+                        <tspan x="20" y="2776">If you don’t want to </tspan>
+                        <tspan x="20" y="2792">go farther than your </tspan>
+                        <tspan x="20" y="2808">mailbox, examine some </tspan>
+                        <tspan x="20" y="2824">of those credit </tspan>
+                        <tspan x="20" y="2840">checks your bank </tspan>
+                        <tspan x="20" y="2856">keeps sending you in </tspan>
+                        <tspan x="20" y="2872">the mail. A lot of </tspan>
+                        <tspan x="20" y="2888">people take advantage </tspan>
+                        <tspan x="20" y="2904">of their fairly </tspan>
+                        <tspan x="20" y="2920">reasonable interest </tspan>
+                        <tspan x="20" y="2936">rates to fund </tspan>
+                        <tspan x="20" y="2952">projects. 3) </tspan>
+                        <tspan x="20" y="2968">Presentation is Key. </tspan>
+                        <tspan x="20" y="2984">You’ll find that </tspan>
+                        <tspan x="20" y="3000">excellent writing </tspan>
+                        <tspan x="20" y="3016">skills and good </tspan>
+                        <tspan x="20" y="3032">marketing go hand in </tspan>
+                        <tspan x="20" y="3048">hand. As you improve </tspan>
+                        <tspan x="20" y="3064">on one, the other is </tspan>
+                        <tspan x="20" y="3080">bound to follow. </tspan>
+                        <tspan x="20" y="3096">Knowing how to write, </tspan>
+                        <tspan x="20" y="3112">and how to write well </tspan>
+                        <tspan x="20" y="3128">will give you an </tspan>
+                        <tspan x="20" y="3144">extraordinary </tspan>
+                        <tspan x="20" y="3160">advantage of the </tspan>
+                        <tspan x="20" y="3176">majority of </tspan>
+                        <tspan x="20" y="3192">individuals vying for </tspan>
+                        <tspan x="20" y="3208">your customers’ </tspan>
+                        <tspan x="20" y="3224">attention. I don’t </tspan>
+                        <tspan x="20" y="3240">know about you, but I </tspan>
+                        <tspan x="20" y="3256">get a lot of spam for </tspan>
+                        <tspan x="20" y="3272">people wanting to </tspan>
+                        <tspan x="20" y="3288">sell me their “good, </tspan>
+                        <tspan x="20" y="3304">cheap, A+ #1 $$$ rolex </tspan>
+                        <tspan x="20" y="3320">watch, discount </tspan>
+                        <tspan x="20" y="3336">Viagra, H0t s1utz, </tspan>
+                        <tspan x="20" y="3352">etc.” Needless to </tspan>
+                        <tspan x="20" y="3368">say, I have never </tspan>
+                        <tspan x="20" y="3384">purchased anything </tspan>
+                        <tspan x="20" y="3400">from them and most </tspan>
+                        <tspan x="20" y="3416">likely, neither have </tspan>
+                        <tspan x="20" y="3432">you. If you have, </tspan>
+                        <tspan x="20" y="3448">please drop me a line </tspan>
+                        <tspan x="20" y="3464">and let me know how it </tspan>
+                        <tspan x="20" y="3480">worked out. I’m </tspan>
+                        <tspan x="20" y="3496">always wondering how </tspan>
+                        <tspan x="20" y="3512">many of those are a </tspan>
+                        <tspan x="20" y="3528">scam. The emails and </tspan>
+                        <tspan x="20" y="3544">circulars that I do </tspan>
+                        <tspan x="20" y="3560">purchase from come </tspan>
+                        <tspan x="20" y="3576">from GoDaddy, </tspan>
+                        <tspan x="20" y="3592">buy.com, Google and a </tspan>
+                        <tspan x="20" y="3608">host of other </tspan>
+                        <tspan x="20" y="3624">professional </tspan>
+                        <tspan x="20" y="3640">companies that take a </tspan>
+                        <tspan x="20" y="3656">few minutes to earn my </tspan>
+                        <tspan x="20" y="3672">trust with good </tspan>
+                        <tspan x="20" y="3688">punctuation, </tspan>
+                        <tspan x="20" y="3704">grammar, and quality </tspan>
+                        <tspan x="20" y="3720">content.</tspan>
+                        <tspan x="20" y="3736"></tspan>
+                        <tspan x="20" y="3752">If you don’t have a </tspan>
+                        <tspan x="20" y="3768">talent for writing </tspan>
+                        <tspan x="20" y="3784">(and you know who you </tspan>
+                        <tspan x="20" y="3800">are) you have two </tspan>
+                        <tspan x="20" y="3816">choices: Get better </tspan>
+                        <tspan x="121.75" y="3816" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="127.25" y="3816"> </tspan>
+                        <tspan x="20" y="3832">easier said than </tspan>
+                        <tspan x="20" y="3848">done. Like most </tspan>
+                        <tspan x="20" y="3864">things, writing is </tspan>
+                        <tspan x="20" y="3880">one part talent and </tspan>
+                        <tspan x="20" y="3896">nine parts hard work. </tspan>
+                        <tspan x="20" y="3912">Take some classes, do </tspan>
+                        <tspan x="20" y="3928">peer editing </tspan>
+                        <tspan x="20" y="3944">suggestions, or send </tspan>
+                        <tspan x="20" y="3960">it to me look over </tspan>
+                        <tspan x="20" y="3976">(first ten-thousand </tspan>
+                        <tspan x="20" y="3992">submissions only).</tspan>
+                        <tspan x="20" y="4008"></tspan>
+                        <tspan x="20" y="4024">Or, get someone else </tspan>
+                        <tspan x="20" y="4040">to do it </tspan>
+                        <tspan x="61.25" y="4040" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="66.75" y="4040"> leaving </tspan>
+                        <tspan x="20" y="4056">more time for you at </tspan>
+                        <tspan x="20" y="4072">the helm. I like this </tspan>
+                        <tspan x="20" y="4088">option not only </tspan>
+                        <tspan x="20" y="4104">because it’s a time </tspan>
+                        <tspan x="20" y="4120">saver for me, but also </tspan>
+                        <tspan x="20" y="4136">because the work </tspan>
+                        <tspan x="20" y="4152">generally comes out </tspan>
+                        <tspan x="20" y="4168">better than anything </tspan>
+                        <tspan x="20" y="4184">I could have done. </tspan>
+                        <tspan x="20" y="4200">This article is an </tspan>
+                        <tspan x="20" y="4216">excellent example. I </tspan>
+                        <tspan x="20" y="4232">provided a detailed </tspan>
+                        <tspan x="20" y="4248">outline, some good </tspan>
+                        <tspan x="20" y="4264">anecdotes, and the </tspan>
+                        <tspan x="20" y="4280">strategies above and </tspan>
+                        <tspan x="20" y="4296">the copywriters at </tspan>
+                        <tspan x="20" y="4312">danifer.com did the </tspan>
+                        <tspan x="20" y="4328">rest. I made a deal </tspan>
+                        <tspan x="20" y="4344">with them to write the </tspan>
+                        <tspan x="20" y="4360">article for $149 and </tspan>
+                        <tspan x="20" y="4376">we share the </tspan>
+                        <tspan x="20" y="4392">syndication rights. </tspan>
+                        <tspan x="20" y="4408">Not bad for half an </tspan>
+                        <tspan x="20" y="4424">hour’s work. If you </tspan>
+                        <tspan x="20" y="4440">can’t afford to hire a </tspan>
+                        <tspan x="20" y="4456">pro, be courteous to </tspan>
+                        <tspan x="20" y="4472">yourself and your </tspan>
+                        <tspan x="20" y="4488">audience by simply </tspan>
+                        <tspan x="20" y="4504">re-reading your work, </tspan>
+                        <tspan x="20" y="4520">running a spell </tspan>
+                        <tspan x="20" y="4536">check, and letting </tspan>
+                        <tspan x="20" y="4552">your wife/husband/</tspan>
+                        <tspan x="20" y="4568">friend/co-worker </tspan>
+                        <tspan x="20" y="4584">look it over. You’d be </tspan>
+                        <tspan x="20" y="4600">surprised at how many </tspan>
+                        <tspan x="20" y="4616">things invisible to </tspan>
+                        <tspan x="20" y="4632">you will stand out to </tspan>
+                        <tspan x="20" y="4648">a fresh set of eyes. </tspan>
+                        <tspan x="20" y="4664">OK. That’s all I’ve </tspan>
+                        <tspan x="20" y="4680">got for now. Stay </tspan>
+                        <tspan x="20" y="4696">tuned at </tspan>
+                        <tspan x="20" y="4712">howtoadvertise.net </tspan>
+                        <tspan x="20" y="4728">for more advice on how </tspan>
+                        <tspan x="20" y="4744">to get started with </tspan>
+                        <tspan x="20" y="4760">online advertising. </tspan>
+                        <tspan x="20" y="4776">Please remember </tspan>
+                        <tspan x="20" y="4792">though that how far </tspan>
+                        <tspan x="20" y="4808">you go is up to you. </tspan>
+                        <tspan x="20" y="4824">There is no </tspan>
+                        <tspan x="20" y="4840">substitute for your </tspan>
+                        <tspan x="20" y="4856">own work and effort in </tspan>
+                        <tspan x="20" y="4872">succeeding in this </tspan>
+                        <tspan x="20" y="4888">business.</tspan>
+                    </text>
+                </g>
+                <g id="Group-5-Copy-2" transform="translate(50.000000, 10.000000)">
+                    <g id="bg">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <text id="DOCUMENTATION" font-family="OpenSans-Semibold, Open Sans" font-size="13" font-weight="500" fill="#91989C">
+                        <tspan x="22" y="33">DOCUMENTATION</tspan>
+                    </text>
+                    <text id="When-I-first-got-int" font-family="BLOKK" font-size="14" font-weight="normal" line-spacing="13" fill="#E9E9E9">
+                        <tspan x="22.875" y="58">When I first got into the </tspan>
+                        <tspan x="22.875" y="71">online </tspan>
+                        <tspan x="22.875" y="84"></tspan>
+                        <tspan x="22.875" y="97">advertising business, I </tspan>
+                        <tspan x="22.875" y="110">was looking forthe </tspan>
+                        <tspan x="22.875" y="123"></tspan>
+                        <tspan x="22.875" y="136">magical combinatio that </tspan>
+                        <tspan x="22.875" y="149">would</tspan>
+                        <tspan x="22.875" y="162">website into the to</tspan>
+                        <tspan x="22.875" y="175">engine rankings, </tspan>
+                        <tspan x="22.875" y="188">catapult me to the </tspan>
+                        <tspan x="22.875" y="201">forefront of the minds or </tspan>
+                        <tspan x="22.875" y="214">individuals looking to </tspan>
+                        <tspan x="22.875" y="227">buy my product, and </tspan>
+                        <tspan x="22.875" y="240">generally make me rich </tspan>
+                        <tspan x="22.875" y="253">beyond my wildest dreams! </tspan>
+                        <tspan x="22.875" y="266">After succeeding in the </tspan>
+                        <tspan x="22.875" y="279">business for this long, </tspan>
+                        <tspan x="22.875" y="292">I’m able to look back on </tspan>
+                        <tspan x="22.875" y="305">my old self with this kind </tspan>
+                        <tspan x="22.875" y="318">of thinking and shake my </tspan>
+                        <tspan x="22.875" y="331">head. If you’re reading </tspan>
+                        <tspan x="22.875" y="344">this article and you’ve </tspan>
+                        <tspan x="22.875" y="357">come this far, you’re </tspan>
+                        <tspan x="22.875" y="370">probably looking for the </tspan>
+                        <tspan x="22.875" y="383">magic answer yourself. </tspan>
+                        <tspan x="22.875" y="396">You’ve probably read a </tspan>
+                        <tspan x="22.875" y="409">few dozen or a few hundred </tspan>
+                        <tspan x="22.875" y="422">articles just like this </tspan>
+                        <tspan x="22.875" y="435">about pay-per-click </tspan>
+                        <tspan x="22.875" y="448">advertising, maximizing </tspan>
+                        <tspan x="22.875" y="461">return on investment, </tspan>
+                        <tspan x="22.875" y="474">keyword stuffing, black-</tspan>
+                        <tspan x="22.875" y="487">hat seo tactics, text-</tspan>
+                        <tspan x="22.875" y="500">link banner exchanges, </tspan>
+                        <tspan x="22.875" y="513">and the list goes on. </tspan>
+                        <tspan x="22.875" y="526">Well, I’m here to tell you </tspan>
+                        <tspan x="22.875" y="539">that I have the one be all </tspan>
+                        <tspan x="22.875" y="552">end all answer and I’m </tspan>
+                        <tspan x="22.875" y="565">sharing it with the </tspan>
+                        <tspan x="22.875" y="578">world! The truth is that </tspan>
+                        <tspan x="22.875" y="591">there is no magic secret </tspan>
+                        <tspan x="22.875" y="604">to online advertising. No </tspan>
+                        <tspan x="22.875" y="617">one method will generate </tspan>
+                        <tspan x="22.875" y="630">the largest amount of </tspan>
+                        <tspan x="22.875" y="643">income/exposure for </tspan>
+                        <tspan x="22.875" y="656">every website or business </tspan>
+                        <tspan x="22" y="669">imaginable </tspan>
+                        <tspan x="81.4316406" y="664.723633" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="102.5" y="669"> it’s all a </tspan>
+                        <tspan x="22.875" y="682">matter of trial and </tspan>
+                        <tspan x="22.875" y="695">error, time and talent. </tspan>
+                        <tspan x="22.875" y="708">That’s a pretty weak </tspan>
+                        <tspan x="22.875" y="721">answer, I know. It would </tspan>
+                        <tspan x="22.875" y="734">have been much cooler for </tspan>
+                        <tspan x="22.875" y="747">me to tell you that buying </tspan>
+                        <tspan x="22.875" y="760">tiny classified ads in </tspan>
+                        <tspan x="22.875" y="773">your local paper was the </tspan>
+                        <tspan x="22.875" y="786">key to success and </tspan>
+                        <tspan x="22.875" y="799">riches. Well, I’m sorry. </tspan>
+                        <tspan x="22.875" y="812">For the few of you that </tspan>
+                        <tspan x="22.875" y="825">have been down this road </tspan>
+                        <tspan x="22.875" y="838">before and are starting </tspan>
+                        <tspan x="22.875" y="851">to get it, you’ll hear a </tspan>
+                        <tspan x="22.875" y="864">ring of truth in my words. </tspan>
+                        <tspan x="22.875" y="877">The sooner you stop </tspan>
+                        <tspan x="22.875" y="890">looking for a quick fix to </tspan>
+                        <tspan x="22.875" y="903">make your message stick, </tspan>
+                        <tspan x="22.875" y="916">the better. For what it’s </tspan>
+                        <tspan x="22.875" y="929">worth, these are my </tspan>
+                        <tspan x="22.875" y="942">thoughts.</tspan>
+                        <tspan x="22.875" y="955"></tspan>
+                        <tspan x="22.875" y="968">1) The internet has only </tspan>
+                        <tspan x="22.875" y="981">been alive for a few short </tspan>
+                        <tspan x="22.875" y="994">years, and in that time it </tspan>
+                        <tspan x="22.875" y="1007">has changed dramatically </tspan>
+                        <tspan x="22.875" y="1020">many times over. Remember </tspan>
+                        <tspan x="22.875" y="1033">in 1995 when everyone </tspan>
+                        <tspan x="22.875" y="1046">first discovered the cool </tspan>
+                        <tspan x="22.875" y="1059">little animated </tspan>
+                        <tspan x="22.875" y="1072">envelope .gif that you </tspan>
+                        <tspan x="22.875" y="1085">would click on to send </tspan>
+                        <tspan x="22.875" y="1098">them email? Where was </tspan>
+                        <tspan x="22.875" y="1111">your online bill-pay, </tspan>
+                        <tspan x="22.875" y="1124">instant messaging, and </tspan>
+                        <tspan x="22.875" y="1137">dynamically generated </tspan>
+                        <tspan x="22.875" y="1150">page content then? And </tspan>
+                        <tspan x="22.875" y="1163">only a few short years </tspan>
+                        <tspan x="22.875" y="1176">later you can see how far </tspan>
+                        <tspan x="22.875" y="1189">we’ve come and use that as </tspan>
+                        <tspan x="22.875" y="1202">a measure for how far we </tspan>
+                        <tspan x="22.875" y="1215">can go. The point is that </tspan>
+                        <tspan x="22.875" y="1228">the internet, like other </tspan>
+                        <tspan x="22.875" y="1241">forms of media, is a </tspan>
+                        <tspan x="22.875" y="1254">rapidly evolving </tspan>
+                        <tspan x="22.875" y="1267">monster. What works for </tspan>
+                        <tspan x="22.875" y="1280">online advertisers today </tspan>
+                        <tspan x="22.875" y="1293">might be completely </tspan>
+                        <tspan x="22.875" y="1306">ineffectual only a few </tspan>
+                        <tspan x="22.875" y="1319">months from now. That’s </tspan>
+                        <tspan x="22.875" y="1332">why the best advertisers </tspan>
+                        <tspan x="22.875" y="1345">are constantly </tspan>
+                        <tspan x="22.875" y="1358">researching and creating </tspan>
+                        <tspan x="22.875" y="1371">their own unique </tspan>
+                        <tspan x="22.875" y="1384">marketing strategies. </tspan>
+                        <tspan x="22.875" y="1397">The trick is to find out </tspan>
+                        <tspan x="22.875" y="1410">what works for you, and to </tspan>
+                        <tspan x="22.875" y="1423">make sure that you </tspan>
+                        <tspan x="22.875" y="1436">revisit it from time to </tspan>
+                        <tspan x="22.875" y="1449">time to tune it up as the </tspan>
+                        <tspan x="22.875" y="1462">market changes.</tspan>
+                        <tspan x="22.875" y="1475"></tspan>
+                        <tspan x="22.875" y="1488">2) You Have to Spend Money </tspan>
+                        <tspan x="22.875" y="1501">to Make Money. It’s a </tspan>
+                        <tspan x="22.875" y="1514">tired line, but it’s that </tspan>
+                        <tspan x="22.875" y="1527">way because everyone says </tspan>
+                        <tspan x="22.875" y="1540">it. Don’t be afraid to add </tspan>
+                        <tspan x="22.875" y="1553">fuel to your advertising </tspan>
+                        <tspan x="22.875" y="1566">fire and take it to </tspan>
+                        <tspan x="22.875" y="1579">another level. Try </tspan>
+                        <tspan x="22.875" y="1592">investing (note that I </tspan>
+                        <tspan x="22.875" y="1605">said investing and not </tspan>
+                        <tspan x="22.875" y="1618">spending) five, ten, or </tspan>
+                        <tspan x="22.875" y="1631">fifty thousand dollars in </tspan>
+                        <tspan x="22.875" y="1644">advertising. If you don’t </tspan>
+                        <tspan x="22.875" y="1657">jump out a window the </tspan>
+                        <tspan x="22.875" y="1670">first time you do it, you </tspan>
+                        <tspan x="22.875" y="1683">may walk away with a big </tspan>
+                        <tspan x="22.875" y="1696">smile and a little pocket </tspan>
+                        <tspan x="22.875" y="1709">money! The hard part </tspan>
+                        <tspan x="22.875" y="1722">about investing a big </tspan>
+                        <tspan x="22.875" y="1735">chunk of money is coming </tspan>
+                        <tspan x="22.875" y="1748">up with it in the first </tspan>
+                        <tspan x="22.875" y="1761">place. If you already </tspan>
+                        <tspan x="22.875" y="1774">have $50,000 laying </tspan>
+                        <tspan x="22.875" y="1787">around for advertising </tspan>
+                        <tspan x="22.875" y="1800">and are just looking for a </tspan>
+                        <tspan x="22.875" y="1813">place to put it, give me a </tspan>
+                        <tspan x="22.875" y="1826">call. If you’re not that </tspan>
+                        <tspan x="22.875" y="1839">lucky, try looking at the </tspan>
+                        <tspan x="22.875" y="1852">Small Business </tspan>
+                        <tspan x="22.875" y="1865">Administration for ideas </tspan>
+                        <tspan x="22.875" y="1878">on how to get a small </tspan>
+                        <tspan x="22.875" y="1891">business loan. If you </tspan>
+                        <tspan x="22.875" y="1904">don’t want to go farther </tspan>
+                        <tspan x="22.875" y="1917">than your mailbox, </tspan>
+                        <tspan x="22.875" y="1930">examine some of those </tspan>
+                        <tspan x="22.875" y="1943">credit checks your bank </tspan>
+                        <tspan x="22.875" y="1956">keeps sending you in the </tspan>
+                        <tspan x="22.875" y="1969">mail. A lot of people take </tspan>
+                        <tspan x="22.875" y="1982">advantage of their fairly </tspan>
+                        <tspan x="22.875" y="1995">reasonable interest </tspan>
+                        <tspan x="22.875" y="2008">rates to fund projects. </tspan>
+                        <tspan x="22.875" y="2021">3) Presentation is Key. </tspan>
+                        <tspan x="22.875" y="2034">You’ll find that </tspan>
+                        <tspan x="22.875" y="2047">excellent writing skills </tspan>
+                        <tspan x="22.875" y="2060">and good marketing go </tspan>
+                        <tspan x="22.875" y="2073">hand in hand. As you </tspan>
+                        <tspan x="22.875" y="2086">improve on one, the other </tspan>
+                        <tspan x="22.875" y="2099">is bound to follow. </tspan>
+                        <tspan x="22.875" y="2112">Knowing how to write, and </tspan>
+                        <tspan x="22.875" y="2125">how to write well will </tspan>
+                        <tspan x="22.875" y="2138">give you an extraordinary </tspan>
+                        <tspan x="22.875" y="2151">advantage of the majority </tspan>
+                        <tspan x="22.875" y="2164">of individuals vying for </tspan>
+                        <tspan x="22.875" y="2177">your customers’ </tspan>
+                        <tspan x="22.875" y="2190">attention. I don’t know </tspan>
+                        <tspan x="22.875" y="2203">about you, but I get a lot </tspan>
+                        <tspan x="22.875" y="2216">of spam for people </tspan>
+                        <tspan x="22.875" y="2229">wanting to sell me their </tspan>
+                        <tspan x="22.875" y="2242">“good, cheap, A+ #1 $$$ </tspan>
+                        <tspan x="22.875" y="2255">rolex watch, discount </tspan>
+                        <tspan x="22.875" y="2268">Viagra, H0t s1utz, etc.” </tspan>
+                        <tspan x="22.875" y="2281">Needless to say, I have </tspan>
+                        <tspan x="22.875" y="2294">never purchased anything </tspan>
+                        <tspan x="22.875" y="2307">from them and most </tspan>
+                        <tspan x="22.875" y="2320">likely, neither have you. </tspan>
+                        <tspan x="22.875" y="2333">If you have, please drop </tspan>
+                        <tspan x="22.875" y="2346">me a line and let me know </tspan>
+                        <tspan x="22.875" y="2359">how it worked out. I’m </tspan>
+                        <tspan x="22.875" y="2372">always wondering how many </tspan>
+                        <tspan x="22.875" y="2385">of those are a scam. The </tspan>
+                        <tspan x="22.875" y="2398">emails and circulars that </tspan>
+                        <tspan x="22.875" y="2411">I do purchase from come </tspan>
+                        <tspan x="22.875" y="2424">from GoDaddy, buy.com, </tspan>
+                        <tspan x="22.875" y="2437">Google and a host of other </tspan>
+                        <tspan x="22.875" y="2450">professional companies </tspan>
+                        <tspan x="22.875" y="2463">that take a few minutes to </tspan>
+                        <tspan x="22.875" y="2476">earn my trust with good </tspan>
+                        <tspan x="22.875" y="2489">punctuation, grammar, </tspan>
+                        <tspan x="22.875" y="2502">and quality content.</tspan>
+                        <tspan x="22.875" y="2515"></tspan>
+                        <tspan x="22.875" y="2528">If you don’t have a talent </tspan>
+                        <tspan x="22.875" y="2541">for writing (and you know </tspan>
+                        <tspan x="22.875" y="2554">who you are) you have two </tspan>
+                        <tspan x="22" y="2567">choices: Get better </tspan>
+                        <tspan x="137.431641" y="2562.72363" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="158.5" y="2567"> </tspan>
+                        <tspan x="22.875" y="2580">easier said than done. </tspan>
+                        <tspan x="22.875" y="2593">Like most things, writing </tspan>
+                        <tspan x="22.875" y="2606">is one part talent and </tspan>
+                        <tspan x="22.875" y="2619">nine parts hard work. </tspan>
+                        <tspan x="22.875" y="2632">Take some classes, do </tspan>
+                        <tspan x="22.875" y="2645">peer editing </tspan>
+                        <tspan x="22.875" y="2658">suggestions, or send it </tspan>
+                        <tspan x="22.875" y="2671">to me look over (first </tspan>
+                        <tspan x="22.875" y="2684">ten-thousand submissions </tspan>
+                        <tspan x="22.875" y="2697">only).</tspan>
+                        <tspan x="22.875" y="2710"></tspan>
+                        <tspan x="22.875" y="2723">Or, get someone else to do </tspan>
+                        <tspan x="22" y="2736">it </tspan>
+                        <tspan x="25.4316406" y="2731.72363" font-family="LucidaGrande, Lucida Grande">–</tspan>
+                        <tspan x="46.5" y="2736"> leaving more time for </tspan>
+                        <tspan x="22.875" y="2749">you at the helm. I like </tspan>
+                        <tspan x="22.875" y="2762">this option not only </tspan>
+                        <tspan x="22.875" y="2775">because it’s a time saver </tspan>
+                        <tspan x="22.875" y="2788">for me, but also because </tspan>
+                        <tspan x="22.875" y="2801">the work generally comes </tspan>
+                        <tspan x="22.875" y="2814">out better than anything </tspan>
+                        <tspan x="22.875" y="2827">I could have done. This </tspan>
+                        <tspan x="22.875" y="2840">article is an excellent </tspan>
+                        <tspan x="22.875" y="2853">example. I provided a </tspan>
+                        <tspan x="22.875" y="2866">detailed outline, some </tspan>
+                        <tspan x="22.875" y="2879">good anecdotes, and the </tspan>
+                        <tspan x="22.875" y="2892">strategies above and the </tspan>
+                        <tspan x="22.875" y="2905">copywriters at </tspan>
+                        <tspan x="22.875" y="2918">danifer.com did the rest. </tspan>
+                        <tspan x="22.875" y="2931">I made a deal with them to </tspan>
+                        <tspan x="22.875" y="2944">write the article for </tspan>
+                        <tspan x="22.875" y="2957">$149 and we share the </tspan>
+                        <tspan x="22.875" y="2970">syndication rights. Not </tspan>
+                        <tspan x="22.875" y="2983">bad for half an hour’s </tspan>
+                        <tspan x="22.875" y="2996">work. If you can’t afford </tspan>
+                        <tspan x="22.875" y="3009">to hire a pro, be </tspan>
+                        <tspan x="22.875" y="3022">courteous to yourself and </tspan>
+                        <tspan x="22.875" y="3035">your audience by simply </tspan>
+                        <tspan x="22.875" y="3048">re-reading your work, </tspan>
+                        <tspan x="22.875" y="3061">running a spell check, </tspan>
+                        <tspan x="22.875" y="3074">and letting your wife/</tspan>
+                        <tspan x="22.875" y="3087">husband/friend/co-</tspan>
+                        <tspan x="22.875" y="3100">worker look it over. </tspan>
+                        <tspan x="22.875" y="3113">You’d be surprised at how </tspan>
+                        <tspan x="22.875" y="3126">many things invisible to </tspan>
+                        <tspan x="22.875" y="3139">you will stand out to a </tspan>
+                        <tspan x="22.875" y="3152">fresh set of eyes. OK. </tspan>
+                        <tspan x="22.875" y="3165">That’s all I’ve got for </tspan>
+                        <tspan x="22.875" y="3178">now. Stay tuned at </tspan>
+                        <tspan x="22.875" y="3191">howtoadvertise.net for </tspan>
+                        <tspan x="22.875" y="3204">more advice on how to get </tspan>
+                        <tspan x="22.875" y="3217">started with online </tspan>
+                        <tspan x="22.875" y="3230">advertising. Please </tspan>
+                        <tspan x="22.875" y="3243">remember though that how </tspan>
+                        <tspan x="22.875" y="3256">far you go is up to you. </tspan>
+                        <tspan x="22.875" y="3269">There is no substitute </tspan>
+                        <tspan x="22.875" y="3282">for your own work and </tspan>
+                        <tspan x="22.875" y="3295">effort in succeeding in </tspan>
+                        <tspan x="22.875" y="3308">this business.</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

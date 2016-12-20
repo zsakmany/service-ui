@@ -274,6 +274,11 @@ define(['util'], function () {
                 altKrux: 'Krux',
                 altAccellion: 'Accellion',
                 altPlex: 'Plex'
+            },
+            documentation: {
+                notAvailable: 'Documentation is currently unavailable',
+                notAvailableText: 'There is no connection at the moment. You can check our ',
+                notAvailableLink: 'Landing Page',
             }
         },
 

@@ -75,7 +75,7 @@ define(function (require, exports, module) {
                 success: function(data){
                     async.resolve($(data));
                 },
-                fail: function() {
+                error: function() {
                     async.reject();
                 }
             });
