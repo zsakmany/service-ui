@@ -70,19 +70,13 @@ define(function (require, exports, module) {
             $.ajax({
                 method : 'GET',
                 dataType: 'html',
-                // url: '/documentation/documentation.html',
-                url: 'compiled/documentation.html',
-                success: function(data){
-                    async.resolve($(data));
-                }
-            });
-            $.ajax({
-                method : 'GET',
-                dataType: 'html',
                 url: '/documentation/documentation.html',
                 // url: 'compiled/documentation.html',
                 success: function(data){
-                    console.dir('data')
+                    async.resolve($(data));
+                },
+                fail: function() {
+                    async.reject();
                 }
             });
 
