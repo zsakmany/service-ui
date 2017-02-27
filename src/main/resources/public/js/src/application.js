@@ -34,14 +34,20 @@ define(function(require, exports, module) {
     var ExternalService = require('externalServices/externalServices');
     var Urls = require('dataUrlResolver');
     var callService = require('callService');
+    var AnalyticsConnect = require('analytics/AnalyticsConnect');
+
 
     var call = callService.call;
 
     require('../lib/outdatedbrowser');
     require('cookie');
+    require('jquery-ui/widgets/tooltip');
+    // require('jqueryUI');
+    $.widget.bridge('uitooltip', $.ui.tooltip);
     require('bootstrap');
     require('jaddons');
     require('landingDocs');
+    require('updateBackbone');
 
 
     $('[rel="shortcut icon"]').attr('href', document.location.protocol + '//' + document.location.host + document.location.pathname + 'favicon.ico');
@@ -55,25 +61,34 @@ define(function(require, exports, module) {
     Util.trackAjaxCalls();
 
     App.eqjs = Eqjs;
-    Util.setupVisualEffects();
+    // Util.setupVisualEffects();
     Util.shimBind();
 
     Util.addSymbolsValidation();
 
     var config = App.getInstance();
 
-    config.mainScrollElement = Util.setupBaronScroll($('#main_content'));
+    Util.checkWidthScroll();
 
+    config.mainScrollElement = Util.setupBaronScroll($('#main_content'));
     config.userModel = new UserModel;
     config.trackingDispatcher = TrackingDispatcher;
-
     config.router = new Router.Router();
+    AnalyticsConnect.init();
 
     Util.setupWindowEvents();
     Util.setupBackTop();
 
-    config.userModel.load();
 
+
+
+
+    config.userModel.load();
+    if('DEBUG_STATE') {
+        window.userModel = config.userModel;
+        window.router = config.router;
+        window.config = config;
+    }
     (new ExternalService())
         .done(function() {
             // start app

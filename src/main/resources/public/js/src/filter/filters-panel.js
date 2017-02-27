@@ -25,10 +25,10 @@ define(function (require, exports, module) {
     var $ = require('jquery');
     var Backbone = require('backbone');
     var Util = require('util');
-    var Filters = require('filters');
+    var Filters = require('filter/filters');
     var FilterResolver = require('filtersResolver');
     var Service = require('filtersService');
-    var Components = require('components');
+    var Components = require('core/components');
     var Storage = require('storageService');
     var App = require('app');
     var CoreService = require('coreService');
@@ -643,7 +643,6 @@ define(function (require, exports, module) {
                 }
                 var amount = ids.length > 1 ? 's' : '';
                 $.when.apply($, ajaxCalls).done(function () {
-                    config.trackingDispatcher.tabSaved(ids.length || 1);
                     // save tabs order to preferences
                     self.updatePreferences();
                     Util.ajaxSuccessMessenger("savedLaunchFilter" + amount);
@@ -822,7 +821,6 @@ define(function (require, exports, module) {
                     }
                 }
                 this.navigationInfo.applyFilters(this.getFilters(), this.currentTab.id);
-                config.trackingDispatcher.filterTagClick(tag);
             },
 
             onFilterChange: function (immediately) {

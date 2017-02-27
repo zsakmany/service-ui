@@ -24,14 +24,14 @@ define(function (require, exports, module) {
 
     var $ = require('jquery');
     var Backbone = require('backbone');
-    var Components = require('components');
+    var Components = require('core/components');
     var Util = require('util');
     var Urls = require('dataUrlResolver');
     var App = require('app');
     var Service = require('coreService');
     var Storage = require('storageService');
     var DefectEditor = require('defectEditor');
-    var Textile = require('textile');
+    // var Textile = require('textile');
     var StickyHeader = require('core/StickyHeader');
     var Editor = require('launchEditor');
     var Log = require('log');
@@ -39,6 +39,7 @@ define(function (require, exports, module) {
     var Moment = require('moment');
     var d3 = require('d3');
     var nvd3 = require('nvd3');
+    var ModalConfirm = require('modals/modalConfirm');
 
     require('bootstrap');
 
@@ -123,9 +124,6 @@ define(function (require, exports, module) {
         },
 
         onPage: function (page, size) {
-            if (this.navigationInfo.getLevelGridType() === 'log') {
-                config.trackingDispatcher.logViewPaging(page, this.collection.page['totalPages']);
-            }
             this.navigationInfo.trigger('reset::counter');
             this.navigationInfo.applyPaging(page, size);
             this.load();
@@ -424,7 +422,7 @@ define(function (require, exports, module) {
         },
 
         setPreconditionMethods: function (status) {
-            return config.trackingDispatcher.preconditionMethods(status);
+            return true
         },
 
         updateStatusMethodCollapsed: function (collapsed, status) {
@@ -937,32 +935,19 @@ define(function (require, exports, module) {
                 self = this;
 
             if (!$el.hasClass('disabled')) {
-                if (!this.warningDialog) {
-                    this.warningDialog = {};
-                }
-                this.warningDialog['deleteDialog'] = Util.getDialog({
-                    name: this.deleteLaunchTpl,
-                    data: {
-                        name: $el.data('name'),
-                        type: this.navigationInfo.isLaunches() ? 'deleteLaunch' : 'deleteTestItem'
-                    }
-                });
-                this.warningDialog['submitButton'] = $(".rp-btn-danger", this.deleteDialog);
+                var typeItems = (this.navigationInfo.isLaunches()) ? Localization.ui.launch : Localization.ui.item;
 
-                this.warningDialog.deleteDialog
-                    .on('click', ".rp-btn-danger", function (e) {
-                        self.deleteLaunch(id);
-                        self.warningDialog.deleteDialog.modal("hide");
-                    })
-                    .on('change', "#deleteConfirm", function (e) {
-                        self.warningDialog.submitButton.prop('disabled', !$(this).is(':checked'));
-                    })
-                    .on('hidden.bs.modal', function () {
-                        $(this).data('modal', null);
-                        self.warningDialog.submitButton = null;
-                        self.warningDialog.deleteDialog.remove();
-                    });
-                this.warningDialog.deleteDialog.modal("show");
+                var modal = new ModalConfirm({
+                    headerText: Localization.ui.delete + ' ' + typeItems,
+                    bodyText: Util.replaceTemplate(Localization.dialog.msgDeleteItems, typeItems,typeItems + ' \'' + $el.data('name').bold() + '\''),
+                    confirmText: Util.replaceTemplate(Localization.launches.deleteAgree, typeItems +  ' \'' + $el.data('name') + '\''),
+                    cancelButtonText: Localization.ui.cancel,
+                    okButtonText: Localization.ui.delete,
+                });
+
+                modal.show().done(function () {
+                    return self.deleteLaunch(id);
+                });
             }
             else {
                 e.stopPropagation();
@@ -1004,7 +989,7 @@ define(function (require, exports, module) {
                         self.navigationInfo.trigger('navigation::reload::table', {});
                         Util.ajaxSuccessMessenger((data.mode == 'DEBUG') ? 'switchToDebug' : 'switchToAllLaunches');
                         var reportAction = (data.mode === 'DEBUG') ? 'debugOn' : 'debugOff';
-                        config.trackingDispatcher[reportAction](launch.get('status'));
+
                     })
                     .fail(function (error) {
                         Util.ajaxFailMessenger(error);
@@ -1044,17 +1029,13 @@ define(function (require, exports, module) {
                     status = el.attr('href').match(/\&filter.in.status=([^<]+)\&filter.in.type/),
                     result = type ? type[1]
                         : status ? status[1] : 'TOTAL';
-                config.trackingDispatcher.listView(result, el.text().trim());
+
             }
         },
 
         reportLogViewToTracker: function (el) {
             var href = el.attr('href');
-            if (href.indexOf('log-for-') !== -1) {
-                config.trackingDispatcher.logViewOpened(this.collection.get(el.data('id')).get('status'));
-            } else {
-                config.trackingDispatcher.drillDown(this.navigationInfo.length);
-            }
+
         },
 
         toggleStartTimeView: function () {
@@ -1185,7 +1166,6 @@ define(function (require, exports, module) {
         },
 
         editDefect: function (e) {
-            e.preventDefault();
             var that = this,
                 $el = $(e.currentTarget),
                 id = $el.data('id'),
@@ -1242,7 +1222,7 @@ define(function (require, exports, module) {
         openGallery: function (e) {
             e.preventDefault();
             this.navigationInfo.trigger("open::gallery::at::index", $(e.currentTarget).data('slide-index'));
-            config.trackingDispatcher.screenShotOpen();
+
         },
 
         addTestItemsNav: function () {
@@ -1743,7 +1723,7 @@ define(function (require, exports, module) {
                 this.$el.append(Util.templates(this.loadButton));
             }
 
-            config.trackingDispatcher.historyView(launches.length);
+
 
             $('.nicescroll-it, .shifted', this.$el).each(function(){
 
