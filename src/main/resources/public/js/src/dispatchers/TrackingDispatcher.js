@@ -39,9 +39,9 @@ define(function(require, exports, module) {
         12: ['Filter Launches', 'Click on Bttn Add Filters', 'Add New Filter'],
         13: ['Filter Panel', 'Click on Bttn Discard', 'Discard Filter parameters'],
         14: ['Filter Panel', 'Click on Bttn Clone', 'Clone Filter parameters'],
-        15: ['Filter Panel', 'Click on Bttn Edit', 'Edit Filter parameters/Arise modul "Edit Filter"'],
+        15: ['Filter Panel', 'Click on Bttn Edit', 'Edit Filter parameters/Arise modal "Edit Filter"'],
         16: ['Filter Panel', 'Click on Bttn Save', 'Save Filter parameters'],
-        17: ['Filter Panel', 'Click on Bttn Add Widget', 'Add New Widget from Launches Page/Arise Modul "Add Widget"'],
+        17: ['Filter Panel', 'Click on Bttn Add Widget', 'Add New Widget from Launches Page/Arise Modal "Add Widget"'],
         18: ['Filter Launches', 'Hover on Icon Comment on Filter Tab', 'Arise Tooltip with comment from Filter Tab'],
         19: ['Filter Launches', 'Hover on Icon Shared by other on Filter Tab', 'Arise Tooltip with "Filter is shared by other user" from Filter Tab'],
         20: ['Filter Launches', 'Hover on Icon Shared on Filter Tab', 'Arise Tooltip with "Filter is shared" from Filter Tab'],
@@ -49,14 +49,14 @@ define(function(require, exports, module) {
         22: ['Launches', 'Click on All Launches', 'Transition to All Launches without filter'],
         23: ['Launches', 'Click on Item Name', 'Transition to Item page'],
         24: ['Launches', 'Click on Icon Menu near Launch Name', 'Arise Dropdown with single actions for this launch'],
-        25: ['Launches', 'Click on "Move to Debug" in Launch Menu', 'Arise Modul "Move to Debug"'],
+        25: ['Launches', 'Click on "Move to Debug" in Launch Menu', 'Arise Modal "Move to Debug"'],
         26: ['Launches', 'Click on "Force Finish" in Launch Menu', 'Interrupt launch loading'],
         27: ['Launches', 'Click on "Match Issues in Launch" in Launch Menu', 'Starts Matching'],
         28: ['Launches', 'Click on "Analysis" in Launch Menu', 'Starts Analysing'],
-        29: ['Launches', 'Click on "Delete" in Launch Menu', 'Arise Modul "Delete Launch"'],
-        30: ['Launches', 'Click on "Export: PDF" in Launch Menu', 'Stars download of report in PDF'],
-        31: ['Launches', 'Click on "Export: XLS" in Launch Menu', 'Stars download of report in XLS'],
-        32: ['Launches', 'Click on "Export: HTML" in Launch Menu', 'Stars download of report in HTML'],
+        29: ['Launches', 'Click on "Delete" in Launch Menu', 'Arise Modal "Delete Launch"'],
+        30: ['Launches', getExportTitle('PDF'), getExportDescription('PDF')],
+        31: ['Launches', getExportTitle('XLS'), getExportDescription('XLS')],
+        32: ['Launches', getExportTitle('HTML'), getExportDescription('HTML')],
         33: ['Launches', getActionLaunchTitle('NAME'), getDescriptionLaunchTitle('NAME')],
         34: ['Launches', getActionTableFilter('NAME'), getDescriptionTableFilter()],
         35: ['Launches', getActionLaunchTitle('START'), getDescriptionLaunchTitle('START')],
@@ -77,9 +77,45 @@ define(function(require, exports, module) {
         50: ['Launches', getActionTableFilter('SYSTEM ISSUE'), getDescriptionTableFilter()],
         51: ['Launches', getActionLaunchTitle('TO INVESTIGATE'), getDescriptionLaunchTitle('TO INVESTIGATE')],
         52: ['Launches', getActionTableFilter('TO INVESTIGATE'), getDescriptionTableFilter()],
+        53: ['Launches', 'Click on Edit Icon after launch name', 'Edit Launch/Arise Modal "Edit Launch"'],
+        54: ['Launches', 'Hover on Product Bug Circle', 'Arise Tooltip with "Total Product Bugs"'],
+        55: ['Launches', 'Click on Tooltip "Total Product Bugs"', 'Transition to inner level of launch with Product Bugs'],
+        56: ['Launches', 'Hover on Auto Bug Circle', 'Arise Tooltip with "Total Auto Bug"'],
+        57: ['Launches', 'Click on Tooltip "Total Auto Bug"', 'Transition to inner level of launch with Auto Bug'],
+        58: ['Launches', 'Hover on System Issue Circle', 'Arise Tooltip with "Total System Issue"'],
+        59: ['Launches', 'Click on Tooltip "Total System Issue"', 'Transition to inner level of launch with System Issue'],
+        60: ['Launches', 'Click on To Investigate Circle', 'Transition to inner level of launch with To Investigate'],
+        61: ['Launches', 'Click on Bttn Actions', 'Arise Dropdown with list of actions'],
+        62: ['Launches', 'Click on Bttn "Merge" in list of actions', 'Arise Modal "Merge Launches"'],
+        63: ['Launches', 'Click on Bttn "Compare" in list of actions', 'Arise Modal "Compare Launches"'],
+        64: ['Launches', 'Click on Bttn "Move to Debug" in list of actions', 'Arise Modal "Move to Debug"'],
+        65: ['Launches', 'Click on Bttn "Force Finish" in list of actions', 'Force Finish'],
+        66: ['Launches', 'Click on Bttn "Delete" in list of actions', 'Arise Modal "Delete Launch"'],
+        67: ['Launches', 'Click on Close Icon on Tag of Launch', 'Remove launch from  selection'],
+        68: ['Launches', 'Click on Close Icon of all selection', 'Unselect all launches'],
+        69: ['Launches', 'Click on Close Icon on Error Tag of Launch', 'Remove launch from  selection'],
+        70: ['Launches', 'Click on Bttn "Proceed Valid Items"', 'Remove invalid launches from selection'],
+        71: ['Modal Launches', 'Click on Close Icon on Modal "Edit Launch"', 'Close modal "Edit Launch"'],
+        72: ['Modal Launches', 'Click on Bttn Cancel on Modal "Edit Launch"', 'Close modal "Edit Launch"'],
+        73: ['Modal Launches', 'Click on Bttn Save on Modal "Edit Launch"', 'Save changes "Edit Launch"'],
+        74: ['Modal Launches', 'Click on Close Icon on Modal "Move to Debug"', 'Close modal "Move to Debug"'],
+        75: ['Modal Launches', 'Click on Bttn Cancel on Modal "Move to Debug"', 'Close modal "Move to Debug"'],
+        76: ['Modal Launches', 'Click on Bttn Save on Modal "Move to Debug"', 'Save changes "Move to Debug"'],
+        77: ['Modal Launches', 'Click on Close Icon on Modal "Delete Launch"', 'Close modal "Delete Launch"'],
+        78: ['Modal Launches', 'Click on Bttn Cancel on Modal "Delete Launch"', 'Close modal "Delete Launch"'],
+        79: ['Modal Launches', 'Click on Bttn Delete on Modal "Delete Launch"', 'Delete launch mentioned in modal "Delete Launch"'],
+        80: ['Modal Launches', 'Click on Close Icon on Modal "Merge Launches"', 'Close modal "Merge Launches"'],
+        81: ['Modal Launches', 'Click on Bttn Cancel on Modal "Merge Launches"', 'Close modal "Merge Launches"'],
+        82: ['Modal Launches', 'Click on Bttn Merge on Modal "Merge Launches"', 'Merge launches mentioned in modal "Merge Launches"'],
+
     }
 
-
+    function getExportTitle(type){
+        return 'Click on "Export: ' + type + '" in Launch Menu';
+    }
+    function getExportDescription(type){
+        return 'Stars download of report in ' + type;
+    }
     function getActionLaunchTitle(titleName) {
         return 'Hover on Table title "' + titleName +'"';
     }
