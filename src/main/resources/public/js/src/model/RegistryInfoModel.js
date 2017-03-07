@@ -35,27 +35,27 @@ define(function(require, exports, module) {
         initialize: function(){
             this.ready = $.Deferred();
             var self = this;
-            
-            coreService.getRegistryInfo()
-                .done(function(data){
-                    if(data && data.UI && data.UI.build) {
-                        self.set({uiBuildVersion: data.UI.build.version})
-                    }
-                    if(data && data.UAT && data.UAT.auth_extensions){
-                        self.set({authExtensions: data.UAT.auth_extensions});
-                    }
-                    var fullServicesHtml = '';
-                    _.each(data, function(service) {
-                       if(service.build && service.build.name && service.build.version) {
-                           fullServicesHtml+= '<span class="service-name">' + service.build.name + ': </span><span>' + service.build.version + ';</span>'
-                       }
-                    });
-                    self.set({fullServicesHtml: fullServicesHtml});
-                    self.ready.resolve();
-                })
-                .fail(function(){
-                    self.ready.resolve();
-                });
+            self.ready.resolve();
+            // coreService.getRegistryInfo()
+            //     .done(function(data){
+            //         if(data && data.UI && data.UI.build) {
+            //             self.set({uiBuildVersion: data.UI.build.version})
+            //         }
+            //         if(data && data.UAT && data.UAT.auth_extensions){
+            //             self.set({authExtensions: data.UAT.auth_extensions});
+            //         }
+            //         var fullServicesHtml = '';
+            //         _.each(data, function(service) {
+            //            if(service.build && service.build.name && service.build.version) {
+            //                fullServicesHtml+= '<span class="service-name">' + service.build.name + ': </span><span>' + service.build.version + ';</span>'
+            //            }
+            //         });
+            //         self.set({fullServicesHtml: fullServicesHtml});
+            //         self.ready.resolve();
+            //     })
+            //     .fail(function(){
+            //         self.ready.resolve();
+            //     });
         }
     });
     

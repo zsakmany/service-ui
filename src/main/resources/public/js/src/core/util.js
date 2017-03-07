@@ -69,10 +69,11 @@ define(function (require, exports, module) {
 
         getDocumentationHtml: function () {
             var async = $.Deferred();
+
             $.ajax({
                 method : 'GET',
                 dataType: 'html',
-                url: '/documentation/documentation.html',
+                url: '/documentation/documentation.html?n=' + Math.round(1000 + Math.random() * 1000),
                 // url: 'compiled/documentation.html',
                 success: function(data){
                     async.resolve($(data));

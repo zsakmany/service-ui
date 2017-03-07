@@ -29,12 +29,12 @@ define(function(require, exports, module) {
     var Message = require('message');
     var App = require('app');
     var Router = require('router');
-    var Eqjs = require('elementQuery');
+    // var Eqjs = require('elementQuery');
     var TrackingDispatcher = require('dispatchers/TrackingDispatcher');
-    var ExternalService = require('externalServices/externalServices');
-    var Urls = require('dataUrlResolver');
+    // var ExternalService = require('externalServices/externalServices');
+    // var Urls = require('dataUrlResolver');
     var callService = require('callService');
-    var AnalyticsConnect = require('analytics/AnalyticsConnect');
+    // var AnalyticsConnect = require('analytics/AnalyticsConnect');
 
 
     var call = callService.call;
@@ -60,7 +60,7 @@ define(function(require, exports, module) {
     // setup Ajax tracking and handling
     Util.trackAjaxCalls();
 
-    App.eqjs = Eqjs;
+    // App.eqjs = Eqjs;
     // Util.setupVisualEffects();
     Util.shimBind();
 
@@ -74,29 +74,30 @@ define(function(require, exports, module) {
     config.userModel = new UserModel;
     config.trackingDispatcher = TrackingDispatcher;
     config.router = new Router.Router();
-    AnalyticsConnect.init();
+    // AnalyticsConnect.init();
 
     Util.setupWindowEvents();
     Util.setupBackTop();
 
 
+    $('html').removeClass('loading');
+    Backbone.history.start();
 
 
-
-    config.userModel.load();
-    if('DEBUG_STATE') {
-        window.userModel = config.userModel;
-        window.router = config.router;
-        window.config = config;
-    }
-    (new ExternalService())
-        .done(function() {
-            // start app
-            $('html').removeClass('loading');
-            Backbone.history.start();
-            config.userModel.ready.done(function() {
-                config.userModel.checkAuthUrl();
-            });
-
-        });
+    // config.userModel.load();
+    // if('DEBUG_STATE') {
+    //     window.userModel = config.userModel;
+    //     window.router = config.router;
+    //     window.config = config;
+    // }
+    // (new ExternalService())
+    //     .done(function() {
+    //         // start app
+    //         $('html').removeClass('loading');
+    //         Backbone.history.start();
+    //         config.userModel.ready.done(function() {
+    //             config.userModel.checkAuthUrl();
+    //         });
+    //
+    //     });
 });
