@@ -8,9 +8,11 @@ export const ToInvestigteStatistics = ({ value, customProps }) => (
   <div className={cx('to-investigate-statistics')}>
     <span className={cx('title')}>
       <span className={cx('circle')} />
-      { customProps.abbreviation }
+      {customProps.abbreviation}
     </span>
-    <a href="/" className={cx('value')}>{ value.total }</a>
+    <a href="/" className={cx('value')}>
+      {value.total}
+    </a>
   </div>
 );
 ToInvestigteStatistics.propTypes = {

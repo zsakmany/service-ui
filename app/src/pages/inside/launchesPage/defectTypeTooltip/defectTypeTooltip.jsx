@@ -9,13 +9,16 @@ import styles from './defectTypeTooltip.scss';
 const cx = classNames.bind(styles);
 const messages = defineMessages({
   product_bug_total: { id: 'DefectTypeTooltip.pb-total', defaultMessage: 'Total product bugs' },
-  automation_bug_total: { id: 'DefectTypeTooltip.ab-total', defaultMessage: 'Total automation bugs' },
+  automation_bug_total: {
+    id: 'DefectTypeTooltip.ab-total',
+    defaultMessage: 'Total automation bugs',
+  },
   system_issue_total: { id: 'DefectTypeTooltip.si-total', defaultMessage: 'Total system issues' },
   no_defect_total: { id: 'DefectTypeTooltip.nd-total', defaultMessage: 'Total no defects' },
 });
 
 @injectIntl
-@connect(state => ({
+@connect((state) => ({
   projectConfig: projectConfigSelector(state),
 }))
 export class DefectTypeTooltip extends Component {
@@ -31,31 +34,24 @@ export class DefectTypeTooltip extends Component {
 
     return (
       <div className={cx('defect-type-tooltip')}>
-        {
-          (this.props.type !== 'to_investigate') &&
+        {this.props.type !== 'to_investigate' && (
           <a href="/" className={cx('total-item')}>
             <div className={cx('name')}>
               <div className={cx('circle')} style={{ backgroundColor: defectConfig[0].color }} />
-              { formatMessage(messages[`${this.props.type}_total`]) }
+              {formatMessage(messages[`${this.props.type}_total`])}
             </div>
-            <span className={cx('value')}>
-              { this.props.data.total }
-            </span>
+            <span className={cx('value')}>{this.props.data.total}</span>
           </a>
-        }
-        {
-          defectConfig.map(item => (
-            <a key={item.locator} href="/"className={cx('item')}>
-              <div className={cx('name')}>
-                <div className={cx('circle')} style={{ backgroundColor: item.color }} />
-                { item.longName }
-              </div>
-              <span className={cx('value')}>
-                { this.props.data[item.locator] }
-              </span>
-            </a>
-            ))
-        }
+        )}
+        {defectConfig.map((item) => (
+          <a key={item.locator} href="/" className={cx('item')}>
+            <div className={cx('name')}>
+              <div className={cx('circle')} style={{ backgroundColor: item.color }} />
+              {item.longName}
+            </div>
+            <span className={cx('value')}>{this.props.data[item.locator]}</span>
+          </a>
+        ))}
       </div>
     );
   }

@@ -7,9 +7,7 @@ const cx = classname.bind(styles);
 export const ModalField = ({ label, children }) => (
   <div className={cx('modal-field')}>
     {label && <Label label={label} />}
-    <Content>
-      {children}
-    </Content>
+    <Content>{children}</Content>
   </div>
 );
 ModalField.propTypes = {
@@ -21,11 +19,7 @@ ModalField.defaultProps = {
   children: null,
 };
 
-const Label = ({ label }) => (
-  <div className={cx('modal-field-label')}>
-    {label}
-  </div>
-);
+const Label = ({ label }) => <div className={cx('modal-field-label')}>{label}</div>;
 Label.propTypes = {
   label: PropTypes.string,
 };
@@ -33,11 +27,7 @@ Label.defaultProps = {
   label: '',
 };
 
-const Content = ({ children }) => (
-  <div className={cx('modal-field-content')}>
-    {children}
-  </div>
-);
+const Content = ({ children }) => <div className={cx('modal-field-content')}>{children}</div>;
 Content.propTypes = {
   children: PropTypes.node,
 };

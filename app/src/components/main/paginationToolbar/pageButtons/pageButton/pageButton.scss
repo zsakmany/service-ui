@@ -15,7 +15,7 @@
   }
 
   &.hideOnMobile {
-    @media(max-width: $SCREEN_SM_MAX) {
+    @media (max-width: $SCREEN_SM_MAX) {
       display: none;
     }
   }

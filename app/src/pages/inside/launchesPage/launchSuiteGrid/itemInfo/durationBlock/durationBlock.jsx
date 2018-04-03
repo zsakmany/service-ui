@@ -35,11 +35,11 @@ const cx = classNames.bind(styles);
 const messages = defineMessages({
   inProgressWithEnd: {
     id: 'DurationBlock.inProgressWithEnd',
-    defaultMessage: 'Wrong status: \'In progress\' with finish time',
+    defaultMessage: "Wrong status: 'In progress' with finish time",
   },
   notInProgressWithoutEnd: {
     id: 'DurationBlock.notInProgressWithoutEnd',
-    defaultMessage: 'Wrong state: item is not \'In progress\', but has no finish time',
+    defaultMessage: "Wrong state: item is not 'In progress', but has no finish time",
   },
   inProgress: {
     id: 'DurationBlock.inProgress',
@@ -96,7 +96,7 @@ export class DurationBlock extends Component {
         ? formatMessage(messages.inProgressWithEnd)
         : formatMessage(messages.notInProgressWithoutEnd);
     } else if (this.isInProgress()) {
-      if (this.validateForApproximateTime() && (approxTime <= 0) && this.props.itemNumber !== 1) {
+      if (this.validateForApproximateTime() && approxTime <= 0 && this.props.itemNumber !== 1) {
         return this.getOverApproximateTitle();
       }
       return formatMessage(messages.inProgress);
@@ -124,15 +124,16 @@ export class DurationBlock extends Component {
 
   getApproximateTime = () => {
     const approxTime = Math.round(this.props.timing.approxTime);
-    return Math.round(((this.props.timing.start + approxTime) - (moment().unix() * 1000)) / 1000);
+    return Math.round((this.props.timing.start + approxTime - moment().unix() * 1000) / 1000);
   };
 
-  isInvalidDuration = () => (this.isInProgress() && this.hasStartAndEndTime()) ||
-      (!this.isInProgress() && this.hasStartNoEndTime());
+  isInvalidDuration = () =>
+    (this.isInProgress() && this.hasStartAndEndTime()) ||
+    (!this.isInProgress() && this.hasStartNoEndTime());
 
   hasStartAndEndTime = () => !!(this.props.timing.start && this.props.timing.end);
 
-  hasStartNoEndTime = () => (this.props.timing.start && !this.props.timing.end);
+  hasStartNoEndTime = () => this.props.timing.start && !this.props.timing.end;
 
   isInProgress = () => this.props.status === 'IN_PROGRESS';
   isStopped = () => this.props.status === 'STOPPED';
@@ -141,7 +142,7 @@ export class DurationBlock extends Component {
 
   validateForApproximateTime = () => {
     const type = this.props.type;
-    const isLaunch = type === 'LAUNCH' || !(type);
+    const isLaunch = type === 'LAUNCH' || !type;
     return this.isInProgress() && isLaunch;
   };
 
@@ -151,18 +152,16 @@ export class DurationBlock extends Component {
         className={cx({ 'duration-block': true, error: this.isStopped() || this.isInterrupted() })}
         title={this.getStatusTitle()}
       >
-        <div className={cx('icon')}>
-          { Parser(ClockIcon) }
-        </div>
-        {
-          this.isInProgress()
-            ?
-              <span className={cx('in-progress')}><img src={InProgressGif} alt="In progress" /></span>
-            :
-              <span className={cx('duration')}>
-                { getDuration(this.props.timing.start, this.props.timing.end) }
-              </span>
-        }
+        <div className={cx('icon')}>{Parser(ClockIcon)}</div>
+        {this.isInProgress() ? (
+          <span className={cx('in-progress')}>
+            <img src={InProgressGif} alt="In progress" />
+          </span>
+        ) : (
+          <span className={cx('duration')}>
+            {getDuration(this.props.timing.start, this.props.timing.end)}
+          </span>
+        )}
       </div>
     );
   }

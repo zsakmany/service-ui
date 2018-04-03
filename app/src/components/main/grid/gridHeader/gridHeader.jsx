@@ -14,23 +14,20 @@ export const GridHeader = ({
   onFilterClick,
 }) => (
   <div className={cx('grid-header')}>
-    {
-      columns.map((column, i) =>
-        (
-          <HeaderCell
-            key={column.id || i}
-            title={column.title}
-            align={column.align}
-            sortable={column.sortable}
-            id={column.id}
-            withFilter={column.withFilter}
-            sortingDirection={sortingDirection}
-            sortingActive={sortingColumn === column.id}
-            onChangeSorting={onChangeSorting}
-            onFilterClick={onFilterClick}
-          />
-        ))
-    }
+    {columns.map((column, i) => (
+      <HeaderCell
+        key={column.id || i}
+        title={column.title}
+        align={column.align}
+        sortable={column.sortable}
+        id={column.id}
+        withFilter={column.withFilter}
+        sortingDirection={sortingDirection}
+        sortingActive={sortingColumn === column.id}
+        onChangeSorting={onChangeSorting}
+        onFilterClick={onFilterClick}
+      />
+    ))}
   </div>
 );
 GridHeader.propTypes = {
@@ -44,8 +41,6 @@ GridHeader.defaultProps = {
   columns: [],
   sortingColumn: '',
   sortingDirection: null,
-  onChangeSorting: () => {
-  },
-  onFilterClick: () => {
-  },
+  onChangeSorting: () => {},
+  onFilterClick: () => {},
 };

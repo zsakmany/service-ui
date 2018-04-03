@@ -33,60 +33,56 @@ export class GridRow extends Component {
 
   toggleAccordion = () => {
     this.setState({ expanded: !this.state.expanded });
-    this.overflowCell.style.maxHeight = this.state.expanded ? `${this.overflowCellMaxHeight}px` : null;
+    this.overflowCell.style.maxHeight = this.state.expanded
+      ? `${this.overflowCellMaxHeight}px`
+      : null;
   };
 
   render() {
     const { columns, value } = this.props;
     return (
       <div className={cx('grid-row-wrapper')}>
-        {
-          this.state.withAccordion
-            &&
-              <div className={cx('accordion-wrapper-mobile')}>
+        {this.state.withAccordion && (
+          <div className={cx('accordion-wrapper-mobile')}>
+            <div
+              className={cx({ 'accordion-toggler-mobile': true, rotated: this.state.expanded })}
+              onClick={this.toggleAccordion}
+            />
+          </div>
+        )}
+        <div className={cx('grid-row')}>
+          {columns.map((column, i) => {
+            if (column.maxHeight) {
+              this.overflowCellMaxHeight = column.maxHeight;
+            }
+            return (
+              <GridCell
+                key={column.id || i}
+                refFunction={column.maxHeight ? this.setupAccordion : null}
+                mobileWidth={column.mobileWidth}
+                selectors={column.selectors}
+                value={value}
+                align={column.align}
+                component={column.component}
+                formatter={column.formatter}
+                title={column.title}
+                customProps={column.customProps}
+              />
+            );
+          })}
+        </div>
+        {this.state.withAccordion && (
+          <div className={cx('grid-row')}>
+            <div className={cx('accordion-wrapper')}>
+              <div className={cx('accordion-block')}>
                 <div
-                  className={cx({ 'accordion-toggler-mobile': true, rotated: this.state.expanded })}
+                  className={cx({ 'accordion-toggler': true, rotated: this.state.expanded })}
                   onClick={this.toggleAccordion}
                 />
               </div>
-        }
-        <div className={cx('grid-row')}>
-          {
-            columns.map((column, i) => {
-              if (column.maxHeight) {
-                this.overflowCellMaxHeight = column.maxHeight;
-              }
-              return (
-                <GridCell
-                  key={column.id || i}
-                  refFunction={column.maxHeight ? this.setupAccordion : null}
-                  mobileWidth={column.mobileWidth}
-                  selectors={column.selectors}
-                  value={value}
-                  align={column.align}
-                  component={column.component}
-                  formatter={column.formatter}
-                  title={column.title}
-                  customProps={column.customProps}
-                />
-              );
-            })
-          }
-        </div>
-        {
-          this.state.withAccordion
-            &&
-              <div className={cx('grid-row')}>
-                <div className={cx('accordion-wrapper')}>
-                  <div className={cx('accordion-block')}>
-                    <div
-                      className={cx({ 'accordion-toggler': true, rotated: this.state.expanded })}
-                      onClick={this.toggleAccordion}
-                    />
-                  </div>
-                </div>
-              </div>
-        }
+            </div>
+          </div>
+        )}
       </div>
     );
   }

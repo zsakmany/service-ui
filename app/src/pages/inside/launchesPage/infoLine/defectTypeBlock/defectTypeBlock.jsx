@@ -18,7 +18,7 @@ const cx = classNames.bind(styles);
     desktopOnly: true,
   },
 })
-@connect(state => ({
+@connect((state) => ({
   projectConfig: projectConfigSelector(state),
 }))
 export class DefectTypeBlock extends Component {
@@ -33,9 +33,7 @@ export class DefectTypeBlock extends Component {
     return (
       <div className={cx('defect-type-block')}>
         <div className={cx('circle')} style={{ backgroundColor: defectType.color }} />
-        <span className={cx('title')}>
-          { defectType.shortName }
-        </span>
+        <span className={cx('title')}>{defectType.shortName}</span>
         <div className={cx('value')} style={{ borderColor: defectType.color }}>
           {this.props.data.total}
         </div>

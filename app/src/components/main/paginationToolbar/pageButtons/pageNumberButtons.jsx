@@ -26,11 +26,11 @@ const createPageNumberButtons = (maxShownPages, activePage, pageCount, onChangeP
   } else {
     range = createPageRange(activePage - (halfShownPages - 1), activePage + halfShownPages);
   }
-  const buttons = range.map(page => (
+  const buttons = range.map((page) => (
     <PageButton
       key={page}
       active={activePage === page}
-      onClick={() => (activePage !== page) && onChangePage(page)}
+      onClick={() => activePage !== page && onChangePage(page)}
     >
       {page}
     </PageButton>
@@ -52,8 +52,7 @@ export class PageNumberButtons extends PureComponent {
   };
 
   static defaultProps = {
-    onChangePage: () => {
-    },
+    onChangePage: () => {},
   };
 
   state = {
@@ -73,11 +72,9 @@ export class PageNumberButtons extends PureComponent {
     this.match.removeListener(this.setShownPages);
   }
 
-  setShownPages = media =>
+  setShownPages = (media) =>
     this.setState({
-      shownPages: media.matches
-        ? MOBILE_MAX_VISIBLE_PAGES
-        : DESKTOP_MAX_VISIBLE_PAGES,
+      shownPages: media.matches ? MOBILE_MAX_VISIBLE_PAGES : DESKTOP_MAX_VISIBLE_PAGES,
     });
 
   render() {

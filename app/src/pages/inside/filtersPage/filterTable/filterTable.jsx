@@ -29,14 +29,10 @@ export class FilterTable extends PureComponent {
     pageCount: 0,
     pageSize: 20,
     userId: '',
-    onChangePage: () => {
-    },
-    onChangePageSize: () => {
-    },
-    onDelete: () => {
-    },
-    onEdit: () => {
-    },
+    onChangePage: () => {},
+    onChangePageSize: () => {},
+    onDelete: () => {},
+    onEdit: () => {},
   };
 
   render() {
@@ -44,22 +40,20 @@ export class FilterTable extends PureComponent {
       <Fragment>
         <div className={cx('filter-table')}>
           <FilterTableHeader />
-          {
-            this.props.data.map(item => (
-              <FilterTableItem
-                key={item.id}
-                name={item.name}
-                description={item.description}
-                owner={item.owner}
-                options="(TBD)"
-                shared={item.share}
-                showOnLaunches={item.showOnLaunches}
-                editable={item.owner === this.props.userId}
-                onDelete={() => this.props.onDelete(item)}
-                onEdit={() => this.props.onEdit(item)}
-              />
-            ))
-          }
+          {this.props.data.map((item) => (
+            <FilterTableItem
+              key={item.id}
+              name={item.name}
+              description={item.description}
+              owner={item.owner}
+              options="(TBD)"
+              shared={item.share}
+              showOnLaunches={item.showOnLaunches}
+              editable={item.owner === this.props.userId}
+              onDelete={() => this.props.onDelete(item)}
+              onEdit={() => this.props.onEdit(item)}
+            />
+          ))}
         </div>
         <div className={cx('filter-table-pagination')}>
           <PaginationToolbar

@@ -62,13 +62,13 @@
         &.icon-image {
           background-image: url(./img/image-icon.svg);
         }
-        &.icon-link{
+        &.icon-link {
           background-image: url(./img/link-icon.svg);
         }
         &.icon-quote {
           background-image: url(./img/quote-icon.svg);
         }
-        &.icon-code{
+        &.icon-code {
           background-image: url(./img/code-icon.svg);
         }
         &.icon-preview {
@@ -95,7 +95,8 @@
     .CodeMirror-scroll {
       max-height: 350px;
     }
-    .CodeMirror-scroll, .CodeMirror {
+    .CodeMirror-scroll,
+    .CodeMirror {
       min-height: 160px;
     }
     .CodeMirror-wrap {

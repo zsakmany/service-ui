@@ -28,12 +28,19 @@ import styles from './filterTableItem.scss';
 
 const cx = classNames.bind(styles);
 
-export const FilterTableItem = (
-  { name, description, options, owner, showOnLaunches,
-    shared, onClickName, onEdit, onChangeDisplay, onDelete,
-    editable,
-  },
-) => (
+export const FilterTableItem = ({
+  name,
+  description,
+  options,
+  owner,
+  showOnLaunches,
+  shared,
+  onClickName,
+  onEdit,
+  onChangeDisplay,
+  onDelete,
+  editable,
+}) => (
   <div className={cx('filter-table-item')}>
     <div className={cx('block', 'name-block')}>
       <span className={cx('name-wrapper')}>
@@ -47,20 +54,18 @@ export const FilterTableItem = (
         <MarkdownViewer value={description} />
       </div>
     </div>
-    <div className={cx('block', 'options-block')}>
-      { options }
-    </div>
+    <div className={cx('block', 'options-block')}>{options}</div>
     <div className={cx('block', 'owner-block')}>
       <div className={cx('mobile-label', 'owner-label')}>
         <FormattedMessage id={'FilterTableItem.owner'} defaultMessage={'Owner:'} />
       </div>
-      { owner }
+      {owner}
     </div>
     <div className={cx('block', 'shared-block')}>
       <div className={cx('mobile-label', 'shared-label')}>
         <FormattedMessage id={'FilterTableItem.shared'} defaultMessage={'Shared:'} />
       </div>
-      { shared ? <div className={cx('shared-icon')} onClick={onEdit} /> : null }
+      {shared ? <div className={cx('shared-icon')} onClick={onEdit} /> : null}
     </div>
     <div className={cx('block', 'display-block')}>
       <div className={cx('mobile-label', 'display-label')}>
@@ -69,11 +74,17 @@ export const FilterTableItem = (
       <div className={cx('switcher-wrapper')}>
         <InputSwitcher value={showOnLaunches} onChange={onChangeDisplay}>
           <span className={cx('switcher-label')}>
-            {
-              showOnLaunches
-                ? <FormattedMessage id={'FilterTableItem.showOnLaunchesSwitcherOn'} defaultMessage={'ON'} />
-                : <FormattedMessage id={'FilterTableItem.showOnLaunchesSwitcherOff'} defaultMessage={'OFF'} />
-            }
+            {showOnLaunches ? (
+              <FormattedMessage
+                id={'FilterTableItem.showOnLaunchesSwitcherOn'}
+                defaultMessage={'ON'}
+              />
+            ) : (
+              <FormattedMessage
+                id={'FilterTableItem.showOnLaunchesSwitcherOff'}
+                defaultMessage={'OFF'}
+              />
+            )}
           </span>
         </InputSwitcher>
       </div>

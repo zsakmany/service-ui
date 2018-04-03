@@ -8,26 +8,23 @@ import {
   START_TIME_FORMAT_RELATIVE,
   START_TIME_FORMAT_ABSOLUTE,
 } from 'controllers/user';
-import {
-  dateFormat,
-  fromNowFormat,
-} from 'common/utils';
+import { dateFormat, fromNowFormat } from 'common/utils';
 import styles from './absRelTime.scss';
 
 const cx = classNames.bind(styles);
 
-@connect(state => ({
-  startTimeFormat: startTimeFormatSelector(state),
-}), {
-  setStartTimeFormatAction,
-})
+@connect(
+  (state) => ({
+    startTimeFormat: startTimeFormatSelector(state),
+  }),
+  {
+    setStartTimeFormatAction,
+  },
+)
 export class AbsRelTime extends Component {
   static propTypes = {
     startTime: PropTypes.number,
-    startTimeFormat: PropTypes.oneOf([
-      START_TIME_FORMAT_RELATIVE,
-      START_TIME_FORMAT_ABSOLUTE,
-    ]),
+    startTimeFormat: PropTypes.oneOf([START_TIME_FORMAT_RELATIVE, START_TIME_FORMAT_ABSOLUTE]),
     setStartTimeFormatAction: PropTypes.func.isRequired,
   };
 
@@ -46,13 +43,12 @@ export class AbsRelTime extends Component {
 
   render() {
     return (
-      <div className={cx('abs-rel-time', { relative: this.isRelative() })} onClick={this.toggleFormat}>
-        <span className={cx('relative-time')}>
-          {fromNowFormat(this.props.startTime)}
-        </span>
-        <span className={cx('absolute-time')}>
-          {dateFormat(this.props.startTime)}
-        </span>
+      <div
+        className={cx('abs-rel-time', { relative: this.isRelative() })}
+        onClick={this.toggleFormat}
+      >
+        <span className={cx('relative-time')}>{fromNowFormat(this.props.startTime)}</span>
+        <span className={cx('absolute-time')}>{dateFormat(this.props.startTime)}</span>
       </div>
     );
   }

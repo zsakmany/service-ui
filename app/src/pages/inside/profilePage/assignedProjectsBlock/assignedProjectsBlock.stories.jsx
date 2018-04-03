@@ -43,19 +43,16 @@ const projectsMockUp = [
 ];
 
 storiesOf('Pages/inside/profilePage/assignedProjectsBlock', module)
-  .addDecorator(host({
-    title: 'Assigned projects table on profile page',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#f5f5f5',
-    height: 'auto',
-    width: '70%',
-  }))
+  .addDecorator(
+    host({
+      title: 'Assigned projects table on profile page',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#f5f5f5',
+      height: 'auto',
+      width: '70%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state (no provided info)', () => (
-    <AssignedProjectsBlock />
-  ))
-  .add('with projects', () => (
-    <AssignedProjectsBlock projects={projectsMockUp} />
-  ))
-;
+  .add('default state (no provided info)', () => <AssignedProjectsBlock />)
+  .add('with projects', () => <AssignedProjectsBlock projects={projectsMockUp} />);

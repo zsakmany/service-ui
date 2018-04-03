@@ -45,11 +45,21 @@ export const InputCheckbox = ({ children, value, disabled, onChange, onFocus, on
         onChange={handlerOnChange}
       />
       <div className={squareClasses}>
-        <svg className={cx('icon')} xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 8 7">
-          <polygon fill={disabled ? '#999' : '#fff'} fillRule="evenodd" points="0 3.111 3 6.222 8 1.037 7 0 3 4.148 1 2.074" />
+        <svg
+          className={cx('icon')}
+          xmlns="http://www.w3.org/2000/svg"
+          width="9"
+          height="10"
+          viewBox="0 0 8 7"
+        >
+          <polygon
+            fill={disabled ? '#999' : '#fff'}
+            fillRule="evenodd"
+            points="0 3.111 3 6.222 8 1.037 7 0 3 4.148 1 2.074"
+          />
         </svg>
       </div>
-      { children && <span className={cx({ 'children-container': true, disabled })}>{children}</span> }
+      {children && <span className={cx({ 'children-container': true, disabled })}>{children}</span>}
     </label>
   );
 };

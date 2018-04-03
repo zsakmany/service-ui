@@ -11,7 +11,7 @@ import styles from './header.scss';
 const cx = classNames.bind(styles);
 
 @withRouter
-@connect(state => ({
+@connect((state) => ({
   user: userInfoSelector(state),
   activeProject: activeProjectSelector(state),
 }))
@@ -33,10 +33,7 @@ export class Header extends PureComponent {
     return (
       <div className={cx('header')}>
         <div className={cx('mobile-header-block')}>
-          <div
-            className={cx({ hamburger: true, opened: sideMenuOpened })}
-            onClick={toggleSideMenu}
-          >
+          <div className={cx({ hamburger: true, opened: sideMenuOpened })} onClick={toggleSideMenu}>
             <div className={cx('hamburger-part')} />
             <div className={cx('hamburger-part')} />
             <div className={cx('hamburger-part')} />
@@ -51,8 +48,16 @@ export class Header extends PureComponent {
         </div>
         <div className={cx('separator')} />
         <div className={cx('nav-btns-block')}>
-          <NavLink to={`/${activeProject}/members`} className={cx('nav-btn', 'members-btn')} activeClassName={cx('active')} />
-          <NavLink to={`/${activeProject}/settings`} className={cx('nav-btn', 'settings-btn')} activeClassName={cx('active')} />
+          <NavLink
+            to={`/${activeProject}/members`}
+            className={cx('nav-btn', 'members-btn')}
+            activeClassName={cx('active')}
+          />
+          <NavLink
+            to={`/${activeProject}/settings`}
+            className={cx('nav-btn', 'settings-btn')}
+            activeClassName={cx('active')}
+          />
         </div>
         <UserBlock user={user} />
       </div>

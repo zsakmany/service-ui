@@ -89,7 +89,6 @@ export class ForgotPasswordForm extends PureComponent {
                 <FormattedMessage id={'ForgotPasswordForm.cancel'} defaultMessage={'Cancel'} />
               </BigButton>
             </Link>
-
           </div>
           <div className={cx('forgot-password-button')}>
             <BigButton type={'submit'} color={'organish'}>

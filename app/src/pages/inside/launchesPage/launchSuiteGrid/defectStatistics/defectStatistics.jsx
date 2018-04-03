@@ -8,11 +8,13 @@ export const DefectStatistics = ({ value, customProps, type }) => (
   <div className={cx('defect-statistics')}>
     <span className={cx('title')}>
       <span className={cx('circle', { [`type-${type}`]: type })} />
-      { customProps.abbreviation }
+      {customProps.abbreviation}
     </span>
-    <a href="/" className={cx('value')}>{ value.total }</a>
+    <a href="/" className={cx('value')}>
+      {value.total}
+    </a>
   </div>
-  );
+);
 DefectStatistics.propTypes = {
   type: PropTypes.string,
   value: PropTypes.object.isRequired,

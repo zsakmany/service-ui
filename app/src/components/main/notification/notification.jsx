@@ -35,7 +35,7 @@ export class Notification extends PureComponent {
       return (
         <div key={message}>
           <div className={cx('message-container', level)}>
-            <p>{ messageId ? intl.formatMessage(messages[messageId]) : message}</p>
+            <p>{messageId ? intl.formatMessage(messages[messageId]) : message}</p>
           </div>
         </div>
       );

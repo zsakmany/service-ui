@@ -75,12 +75,12 @@ export class ModalLayout extends Component {
     this.setState({ shown: false });
   };
   render() {
-    const {
-      title, warningMessage, okButton, cancelButton, customButton,
-      children,
-    } = this.props;
+    const { title, warningMessage, okButton, cancelButton, customButton, children } = this.props;
     const footerProps = {
-      warningMessage, okButton, cancelButton, customButton,
+      warningMessage,
+      okButton,
+      cancelButton,
+      customButton,
     };
 
     return (
@@ -93,21 +93,22 @@ export class ModalLayout extends Component {
               classNames={cx('modal-window-animation')}
               onExited={this.props.hideModalAction}
             >
-              {status => (
-                <div ref={(modal) => { this.modal = modal; }} className={cx('modal-window')}>
+              {(status) => (
+                <div
+                  ref={(modal) => {
+                    this.modal = modal;
+                  }}
+                  className={cx('modal-window')}
+                >
                   <div className={cx('modal-header')}>
-                    <span className={cx('modal-title')}>
-                      {title}
-                    </span>
+                    <span className={cx('modal-title')}>{title}</span>
                     <div className={cx('close-modal-icon')} onClick={this.closeModal}>
                       {Parser(CloseIcon)}
                     </div>
                     <div className={cx('separator')} />
                   </div>
 
-                  <ModalContent>
-                    {status !== 'exited' ? children : null }
-                  </ModalContent>
+                  <ModalContent>{status !== 'exited' ? children : null}</ModalContent>
 
                   <ModalFooter
                     {...footerProps}
@@ -116,11 +117,14 @@ export class ModalLayout extends Component {
                   />
                 </div>
               )}
-
             </CSSTransition>
           </Scrollbars>
         </div>
-        <CSSTransition timeout={300} in={this.state.shown} classNames={cx('modal-backdrop-animation')}>
+        <CSSTransition
+          timeout={300}
+          in={this.state.shown}
+          classNames={cx('modal-backdrop-animation')}
+        >
           <div className={cx('backdrop')} />
         </CSSTransition>
       </div>

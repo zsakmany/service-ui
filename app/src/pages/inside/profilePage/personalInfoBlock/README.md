@@ -3,6 +3,7 @@
 Width = 100% of it's parent.
 
 ### Props (main):
+
 * **login**: _string_, optional, default = ''
 * **name**: _string_, optional, default = ''
 * **email**: _string_, optional, default = ''

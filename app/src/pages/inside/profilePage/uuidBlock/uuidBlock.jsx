@@ -33,7 +33,11 @@ export const UuidBlock = ({ uuid }) => (
   <div className={cx('uuid-block')}>
     <BlockContainerHeader>
       <span className={cx('header-label')}>
-        <FormattedMessage id={'UuidBlock.headerNameCol'} class="a" defaultMessage={'Universally unique identifier'} />
+        <FormattedMessage
+          id={'UuidBlock.headerNameCol'}
+          class="a"
+          defaultMessage={'Universally unique identifier'}
+        />
       </span>
     </BlockContainerHeader>
     <BlockContainerBody>
@@ -48,10 +52,14 @@ export const UuidBlock = ({ uuid }) => (
           <div className={cx('field')}>
             <Input readonly value={uuid} />
           </div>
-
         </div>
         <p className={cx('tip')}>
-          <FormattedMessage id={'UuidBlock.tip'} defaultMessage={'In order to provide security for your own domain password, you can use a user token, named UUID - to verify your account to be able to log with agent.'} />
+          <FormattedMessage
+            id={'UuidBlock.tip'}
+            defaultMessage={
+              'In order to provide security for your own domain password, you can use a user token, named UUID - to verify your account to be able to log with agent.'
+            }
+          />
         </p>
       </div>
     </BlockContainerBody>

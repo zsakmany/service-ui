@@ -7,7 +7,10 @@ import { BarChartTooltip } from './barChartTooltip';
 
 const cx = classNames.bind(styles);
 
-@withTooltip({ TooltipComponent: BarChartTooltip, data: { width: 170, align: 'left', noArrow: true } })
+@withTooltip({
+  TooltipComponent: BarChartTooltip,
+  data: { width: 170, align: 'left', noArrow: true },
+})
 export class BarChart extends Component {
   static propTypes = {
     passed: PropTypes.number.isRequired,

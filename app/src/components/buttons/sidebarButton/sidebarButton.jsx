@@ -35,14 +35,15 @@ export const SidebarButton = ({ onClick, icon, children, link, bottom }) => {
   });
   return (
     <div className={classes}>
-      <NavLink to={link} className={cx('nav-link')} activeClassName={cx('active')} onClick={onClick} >
+      <NavLink
+        to={link}
+        className={cx('nav-link')}
+        activeClassName={cx('active')}
+        onClick={onClick}
+      >
         <span className={cx('wrapper')}>
-          <i className={cx('btn-icon')}>
-            { Parser(icon) }
-          </i>
-          <span className={cx('btn-title')}>
-            {children}
-          </span>
+          <i className={cx('btn-icon')}>{Parser(icon)}</i>
+          <span className={cx('btn-title')}>{children}</span>
         </span>
       </NavLink>
     </div>
@@ -64,4 +65,3 @@ SidebarButton.defaultProps = {
   children: null,
   onClick: () => {},
 };
-

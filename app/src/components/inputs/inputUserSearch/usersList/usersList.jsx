@@ -29,7 +29,7 @@ export const UsersList = ({ options, selectValue }) => {
   }
   return (
     <ScrollWrapper autoHeight autoHeightMax={200}>
-      {options.map(option => (
+      {options.map((option) => (
         <UserItem
           key={option.userLogin}
           onClick={() => {

@@ -26,19 +26,16 @@ import UuidBlock from './uuidBlock';
 import README from './README.md';
 
 storiesOf('Pages/inside/profilePage/uuidBlock', module)
-  .addDecorator(host({
-    title: 'Universally Unique Identifier form on profile page',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#f5f5f5',
-    height: 'auto',
-    width: '70%',
-  }))
+  .addDecorator(
+    host({
+      title: 'Universally Unique Identifier form on profile page',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#f5f5f5',
+      height: 'auto',
+      width: '70%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state (no provided info)', () => (
-    <UuidBlock />
-  ))
-  .add('with value', () => (
-    <UuidBlock uuid={'35668002-be4f-44a2-9a27-6cafcbd024b5'} />
-  ))
-;
+  .add('default state (no provided info)', () => <UuidBlock />)
+  .add('with value', () => <UuidBlock uuid={'35668002-be4f-44a2-9a27-6cafcbd024b5'} />);

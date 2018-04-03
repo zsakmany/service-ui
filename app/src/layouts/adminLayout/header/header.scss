@@ -1,13 +1,13 @@
-.mobile-header{
+.mobile-header {
   height: 60px;
   background: $COLOR--black-2;
   width: 100%;
   display: none;
-  @media(max-width: $SCREEN_XS_MAX) {
+  @media (max-width: $SCREEN_XS_MAX) {
     display: block;
   }
 }
-.button-menu-open{
+.button-menu-open {
   position: relative;
   width: 50px;
   height: 60px;
@@ -18,21 +18,21 @@
   cursor: pointer;
 }
 .open {
-  @media(max-width: $SCREEN_XS_MAX) {
+  @media (max-width: $SCREEN_XS_MAX) {
     &.admin-header {
       transform: translate(200px, 0);
       transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1);
     }
   }
 }
-.menu-icon-part{
+.menu-icon-part {
   width: 100%;
   height: 3px;
   background: $COLOR--white-two;
   margin-bottom: 5px;
   display: block;
 }
-.mobile-logo{
+.mobile-logo {
   background-image: url('./img/logo_small.svg');
   width: 150px;
   height: 60px;
@@ -42,30 +42,30 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.admin-header{
+.admin-header {
   position: absolute;
   width: 100%;
   z-index: 11;
   margin: 0;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   box-sizing: border-box;
   color: $COLOR--white-two;
   background: $COLOR--black-2;
   padding: 0 10px 0 15px;
-  @media(max-width: $SCREEN_XS_MAX) {
+  @media (max-width: $SCREEN_XS_MAX) {
     padding: 0;
   }
 }
-.container{
+.container {
   max-width: 1370px;
   margin: 0 auto;
   padding: 16px 5px 11px 15px;
-  @media(max-width: $SCREEN_XS_MAX) {
+  @media (max-width: $SCREEN_XS_MAX) {
     padding: 9px 10px 9px 10px;
     background: $COLOR--charcoal-grey;
   }
 }
-.header-name{
+.header-name {
   margin: 5px 0;
   padding: 0;
   line-height: 22px;
@@ -74,25 +74,25 @@
   font-size: 20px;
   text-transform: uppercase;
   display: inline-block;
-  @media (max-width: $SCREEN_XS_MAX){
+  @media (max-width: $SCREEN_XS_MAX) {
     font-size: 14px;
   }
 }
-.header-crumb{
+.header-crumb {
   display: none;
-  @media (max-width: $SCREEN_XS_MAX){
+  @media (max-width: $SCREEN_XS_MAX) {
     display: inline;
   }
 }
-.admin-header-controls{
+.admin-header-controls {
   float: right;
   text-align: right;
   display: inline-block;
-  @media(max-width: $SCREEN_XS_MAX) {
+  @media (max-width: $SCREEN_XS_MAX) {
     display: none;
   }
 }
-.btn{
+.btn {
   position: relative;
   font-family: $FONT-CONDBOLD, sans-serif;
   letter-spacing: 1px;
@@ -104,24 +104,24 @@
   background: inherit;
   border: none;
   outline: none;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
-.logout{
+.logout {
   padding-left: 20px;
-  &::after{
+  &::after {
     content: url('./img/logout.svg');
     margin-left: 10px;
     vertical-align: sub;
   }
 }
-.back-to-project{
+.back-to-project {
   margin-right: 5px;
   padding-right: 20px;
   padding-left: 15px;
   text-transform: uppercase;
-  &::after{
+  &::after {
     content: '';
     position: absolute;
     top: 0;
@@ -131,7 +131,7 @@
     height: 29px;
     background-color: lighten($COLOR--charcoal-grey, 10%);
   }
-  &::before{
+  &::before {
     content: '';
     display: inline-block;
     width: 5px;

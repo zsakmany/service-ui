@@ -39,7 +39,7 @@ import LogoutIcon from './img/logout-icon-inline.svg';
 const cx = classNames.bind(styles);
 
 @connect(
-  state => ({
+  (state) => ({
     activeProject: activeProjectSelector(state),
   }),
   {
@@ -58,7 +58,7 @@ export class Sidebar extends Component {
   };
   render() {
     return (
-      <div className={cx('sidebar')} >
+      <div className={cx('sidebar')}>
         <div className={cx('top-block')}>
           <div className={cx('sidebar-btn')} onClick={this.props.onClickNavBtn}>
             <SidebarButton icon={DashboardIcon} link={`/${this.props.activeProject}/dashboard`}>

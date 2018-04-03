@@ -48,7 +48,7 @@ export class AppLayout extends PureComponent {
     window.removeEventListener('resize', this.windowResizeHandler, false);
   }
   windowResizeHandler = () => {
-    if (this.state.sideMenuOpened && (window.innerWidth > 767)) {
+    if (this.state.sideMenuOpened && window.innerWidth > 767) {
       this.setState({ sideMenuOpened: false });
     }
   };
@@ -60,7 +60,12 @@ export class AppLayout extends PureComponent {
     return (
       <ScrollWrapper>
         <div className={cx('app-container')}>
-          <div className={cx({ 'slide-container': true, 'side-menu-opened': this.state.sideMenuOpened })}>
+          <div
+            className={cx({
+              'slide-container': true,
+              'side-menu-opened': this.state.sideMenuOpened,
+            })}
+          >
             <div className={cx('sidebar-container')}>
               <div className={cx('corner-area')} />
               <Sidebar
@@ -77,11 +82,12 @@ export class AppLayout extends PureComponent {
                     toggleSideMenu={this.toggleSideMenu}
                   />
                 </div>
-                <div className={cx('page-container')}>
-                  {this.props.children}
-                </div>
+                <div className={cx('page-container')}>{this.props.children}</div>
               </ScrollWrapper>
-              <div className={cx({ 'sidebar-close-area': true, visible: this.state.sideMenuOpened })} onClick={this.toggleSideMenu} />
+              <div
+                className={cx({ 'sidebar-close-area': true, visible: this.state.sideMenuOpened })}
+                onClick={this.toggleSideMenu}
+              />
             </div>
           </div>
           <Notification />

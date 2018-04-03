@@ -21,10 +21,10 @@
 
   @media (max-width: $SCREEN_XS_MAX) {
     width: 40px;
-    height: 55px
+    height: 55px;
   }
 }
-.avatar{
+.avatar {
   position: absolute;
   max-width: 100%;
   max-height: 100%;
@@ -84,7 +84,7 @@
     padding-right: 0;
   }
 
-  &:hover{
+  &:hover {
     .name-pencil-icon {
       display: inline;
 
@@ -119,7 +119,7 @@
   line-height: 20px;
   text-overflow: ellipsis;
 
-  &:hover{
+  &:hover {
     .email-pencil-icon {
       display: inline;
 

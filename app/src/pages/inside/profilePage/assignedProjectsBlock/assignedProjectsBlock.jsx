@@ -31,29 +31,29 @@ export const AssignedProjectsBlock = ({ projects }) => (
   <div className={cx('assigned-projects-block')}>
     <BlockContainerHeader>
       <div className={cx('name-col')}>
-        <FormattedMessage id={'AssignedProjectsBlock.headerNameCol'} defaultMessage={'Assigned on projects'} />
+        <FormattedMessage
+          id={'AssignedProjectsBlock.headerNameCol'}
+          defaultMessage={'Assigned on projects'}
+        />
         {` (${projects.length})`}
       </div>
       <div className={cx('role-col')}>
-        <FormattedMessage id={'AssignedProjectsBlock.headerRoleCol'} defaultMessage={'Project role'} />
+        <FormattedMessage
+          id={'AssignedProjectsBlock.headerRoleCol'}
+          defaultMessage={'Project role'}
+        />
       </div>
     </BlockContainerHeader>
     <BlockContainerBody>
-      {
-          projects.map(project => (
-            <div key={project.name} className={cx('project-item')}>
-              <div className={cx('name-col')}>
-                { project.name }
-              </div>
-              <div className={cx('role-col')}>
-                { project.role }
-              </div>
-            </div>
-            ))
-        }
+      {projects.map((project) => (
+        <div key={project.name} className={cx('project-item')}>
+          <div className={cx('name-col')}>{project.name}</div>
+          <div className={cx('role-col')}>{project.role}</div>
+        </div>
+      ))}
     </BlockContainerBody>
   </div>
-  );
+);
 
 AssignedProjectsBlock.propTypes = {
   projects: PropTypes.arrayOf(PropTypes.object),

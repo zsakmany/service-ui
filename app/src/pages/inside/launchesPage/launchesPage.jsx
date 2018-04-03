@@ -17,7 +17,7 @@ const messages = defineMessages({
   },
 });
 
-@connect(state => ({
+@connect((state) => ({
   userId: userIdSelector(state),
   url: `/api/v1/${activeProjectSelector(state)}/launch`,
 }))
@@ -50,12 +50,9 @@ export class LaunchesPage extends PureComponent {
     pageSize: null,
     sortingColumn: null,
     sortingDirection: null,
-    onChangePage: () => {
-    },
-    onChangePageSize: () => {
-    },
-    onChangeSorting: () => {
-    },
+    onChangePage: () => {},
+    onChangePageSize: () => {},
+    onChangeSorting: () => {},
   };
 
   render() {

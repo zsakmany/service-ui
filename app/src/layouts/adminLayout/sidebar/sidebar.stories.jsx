@@ -27,21 +27,19 @@ import { Sidebar } from './sidebar';
 import README from './README.md';
 
 storiesOf('Components/Main/Admin/Sidebar', module)
-  .addDecorator(host({
-    title: 'AdminSidebar component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#ffffff',
-    height: 1000,
-    width: '100%',
-  }))
+  .addDecorator(
+    host({
+      title: 'AdminSidebar component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#ffffff',
+      height: 1000,
+      width: '100%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state', () => (
-    <Sidebar />
-  ))
-  .add('open menu (max-width:768)', () => (
-    <Sidebar isMenuOpen />
-  ))
+  .add('default state', () => <Sidebar />)
+  .add('open menu (max-width:768)', () => <Sidebar isMenuOpen />)
   .add('with all action', () => (
     <Sidebar
       onClickProjects={action('Projects clicked ')}

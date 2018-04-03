@@ -27,12 +27,53 @@ const cx = classNames.bind(styles);
 
 export const SocialsBlock = () => (
   <div className={cx('socials-block')}>
-    <a href={referenceDictionary.rpGitHub} target="_blank" className={cx({ 'social-link': true, 'gh-icon': true })}>{}</a>
-    <a href={referenceDictionary.rpGitHub} target="_blank" className={cx({ 'social-link': true, 'fb-icon': true })}>{}</a>
-    <a href={referenceDictionary.rpGitHub} target="_blank" className={cx({ 'social-link': true, 'tw-icon': true })}>{}</a>
-    <a href={referenceDictionary.rpGitHub} target="_blank" className={cx({ 'social-link': true, 'yt-icon': true })}>{}</a>
-    <a href={referenceDictionary.rpGitHub} target="_blank" className={cx({ 'social-link': true, 'vk-icon': true })}>{}</a>
-    <a href={referenceDictionary.rpGitHub} target="_blank" className={cx({ 'social-link': true, 'slk-icon': true })}>{}</a>
-    <a href={referenceDictionary.rpGitHub} className={cx({ 'social-link': true, 'mail-icon': true })}>{}</a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      target="_blank"
+      className={cx({ 'social-link': true, 'gh-icon': true })}
+    >
+      {}
+    </a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      target="_blank"
+      className={cx({ 'social-link': true, 'fb-icon': true })}
+    >
+      {}
+    </a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      target="_blank"
+      className={cx({ 'social-link': true, 'tw-icon': true })}
+    >
+      {}
+    </a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      target="_blank"
+      className={cx({ 'social-link': true, 'yt-icon': true })}
+    >
+      {}
+    </a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      target="_blank"
+      className={cx({ 'social-link': true, 'vk-icon': true })}
+    >
+      {}
+    </a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      target="_blank"
+      className={cx({ 'social-link': true, 'slk-icon': true })}
+    >
+      {}
+    </a>
+    <a
+      href={referenceDictionary.rpGitHub}
+      className={cx({ 'social-link': true, 'mail-icon': true })}
+    >
+      {}
+    </a>
   </div>
 );

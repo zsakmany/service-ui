@@ -30,10 +30,16 @@ export const ChangePasswordBlock = () => (
   <div className={cx('change-password-block')}>
     <span className={cx('change-password-msg')}>
       <span className={cx('big')}>
-        <FormattedMessage id={'ChangePasswordBlock.changePass'} defaultMessage={'Change password'} />
+        <FormattedMessage
+          id={'ChangePasswordBlock.changePass'}
+          defaultMessage={'Change password'}
+        />
       </span>
       <br />
-      <FormattedMessage id={'ChangePasswordBlock.enterEmail'} defaultMessage={'enter new password and confirm it'} />
+      <FormattedMessage
+        id={'ChangePasswordBlock.enterEmail'}
+        defaultMessage={'enter new password and confirm it'}
+      />
     </span>
     <ChangePasswordForm />
   </div>

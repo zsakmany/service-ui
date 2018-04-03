@@ -59,7 +59,7 @@ export class FilterEditModal extends Component {
     this.props.initialize(this.props.data.filter);
   }
 
-  saveFilterAndCloseModal = closeModal => (values) => {
+  saveFilterAndCloseModal = (closeModal) => (values) => {
     this.props.data.onEdit(values);
     closeModal();
   };

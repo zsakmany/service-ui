@@ -24,7 +24,9 @@ const messages = defineMessages({
 });
 @reduxForm({
   form: 'filterSearch',
-  validate: ({ filter }) => ({ filter: filter && filter.length < 3 ? 'filterNameError' : undefined }),
+  validate: ({ filter }) => ({
+    filter: filter && filter.length < 3 ? 'filterNameError' : undefined,
+  }),
   onChange: (vals, dispatch, props) => {
     if (vals.filter && vals.filter.length < 3) {
       return;
@@ -45,8 +47,7 @@ export class FilterPageToolbar extends React.Component {
     invalid: false,
     filter: null,
     intl: {},
-    change: () => {
-    },
+    change: () => {},
   };
 
   componentDidMount() {
@@ -72,9 +73,7 @@ export class FilterPageToolbar extends React.Component {
             </FieldErrorHint>
           </FieldProvider>
         </div>
-        <div className={cx('label')}>
-          {this.props.intl.formatMessage(messages.favoriteFilters)}
-        </div>
+        <div className={cx('label')}>{this.props.intl.formatMessage(messages.favoriteFilters)}</div>
         <GhostButton icon={AddFilterIcon}>
           {this.props.intl.formatMessage(messages.addFilter)}
         </GhostButton>

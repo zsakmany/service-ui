@@ -6,7 +6,8 @@ const dataMock = [
   {
     owner: 'superadmin',
     share: false,
-    description: '### **Demonstration launch.**\nA typical *Launch structure* comprises the following elements: Suite > Test > Step > Log.\nLaunch contains *randomly* generated `suites`, `tests`, `steps` with:\n* random issues and statuses,\n* logs,\n* attachments with different formats.',
+    description:
+      '### **Demonstration launch.**\nA typical *Launch structure* comprises the following elements: Suite > Test > Step > Log.\nLaunch contains *randomly* generated `suites`, `tests`, `steps` with:\n* random issues and statuses,\n* logs,\n* attachments with different formats.',
     id: '59f0716308813b00012cfc6a',
     name: 'Demo Api Tests_test1',
     number: 5,
@@ -44,13 +45,7 @@ const dataMock = [
         },
       },
     },
-    tags: [
-      'desktop',
-      'demo',
-      'build:3.0.1.5',
-      'build:3.0.1.6',
-      'build:3.0.1.7',
-    ],
+    tags: ['desktop', 'demo', 'build:3.0.1.5', 'build:3.0.1.6', 'build:3.0.1.7'],
     mode: 'DEFAULT',
     isProcessing: false,
     approximateDuration: 0,
@@ -97,13 +92,7 @@ const dataMock = [
         },
       },
     },
-    tags: [
-      'desktop',
-      'demo',
-      'build:3.0.1.5',
-      'build:3.0.1.6',
-      'build:3.0.1.7',
-    ],
+    tags: ['desktop', 'demo', 'build:3.0.1.5', 'build:3.0.1.6', 'build:3.0.1.7'],
     mode: 'DEFAULT',
     isProcessing: false,
     approximateDuration: 0,
@@ -111,19 +100,15 @@ const dataMock = [
   },
 ];
 
-
 storiesOf('Components/Launches/launchSuiteGrid', module)
-  .addDecorator(host({
-    title: 'Launch Suite Grid component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#fff',
-    height: 'auto',
-    width: '100%',
-  }))
-  .add('default state', () => (
-    <LaunchSuiteGrid
-      data={dataMock}
-    />
-  ))
-;
+  .addDecorator(
+    host({
+      title: 'Launch Suite Grid component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#fff',
+      height: 'auto',
+      width: '100%',
+    }),
+  )
+  .add('default state', () => <LaunchSuiteGrid data={dataMock} />);

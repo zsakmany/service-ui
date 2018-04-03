@@ -36,19 +36,9 @@ export const GhostButton = ({ type, children, disabled, color, icon, onClick, ti
     'mobile-minified': icon && children,
   });
   return (
-    <button type={type} disabled={disabled} className={classes} onClick={onClick} >
-      {
-        icon &&
-        <i className={cx({ icon: true, 'only-icon': !children })} >
-          { Parser(icon) }
-        </i>
-      }
-      {
-        children &&
-        <span className={cx('text')}>
-          { children }
-        </span>
-      }
+    <button type={type} disabled={disabled} className={classes} onClick={onClick}>
+      {icon && <i className={cx({ icon: true, 'only-icon': !children })}>{Parser(icon)}</i>}
+      {children && <span className={cx('text')}>{children}</span>}
     </button>
   );
 };

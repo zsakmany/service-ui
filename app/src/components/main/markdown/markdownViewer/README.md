@@ -3,6 +3,7 @@
 Has no own size. Width = 100% of it's parent, Height calculating by content.
 
 ### Props (main):
+
 * **text**: _string_, optional, default = ''
 * **onResize**: _function_, optional, default = () => {}
 

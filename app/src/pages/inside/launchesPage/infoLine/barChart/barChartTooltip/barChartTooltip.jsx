@@ -9,18 +9,18 @@ export const BarChartTooltip = ({ passed, failed, skipped }) => (
   <div className={cx('bar-chart-tooltip')}>
     <div className={cx('stats-item')}>
       <FormattedMessage id="BarChartTooltip.passed" defaultMessage="Passed:" />
-      <span>{ `${passed.toFixed(2)}%` }</span>
+      <span>{`${passed.toFixed(2)}%`}</span>
     </div>
     <div className={cx('stats-item')}>
       <FormattedMessage id="BarChartTooltip.failed" defaultMessage="Failed:" />
-      <span>{ `${failed.toFixed(2)}%` }</span>
+      <span>{`${failed.toFixed(2)}%`}</span>
     </div>
     <div className={cx('stats-item')}>
       <FormattedMessage id="BarChartTooltip.skipped" defaultMessage="Skipped:" />
-      <span>{ `${skipped.toFixed(2)}%` }</span>
+      <span>{`${skipped.toFixed(2)}%`}</span>
     </div>
   </div>
-  );
+);
 
 BarChartTooltip.propTypes = {
   passed: PropTypes.number.isRequired,

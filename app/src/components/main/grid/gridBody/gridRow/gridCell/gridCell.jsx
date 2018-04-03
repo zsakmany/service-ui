@@ -50,8 +50,7 @@ GridCell.defaultProps = {
   component: TextCell,
   value: {},
   align: ALIGN_LEFT,
-  formatter: value => value,
+  formatter: (value) => value,
   title: {},
-  refFunction: () => {
-  },
+  refFunction: () => {},
 };

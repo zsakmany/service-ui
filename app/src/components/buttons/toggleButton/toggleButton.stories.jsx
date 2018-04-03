@@ -27,24 +27,21 @@ import { ToggleButton } from './toggleButton';
 import README from './README.md';
 
 storiesOf('Components/Buttons/toggleButton', module)
-  .addDecorator(host({
-    title: 'Toggle button component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#fff',
-    height: 30,
-    width: 220,
-  }))
+  .addDecorator(
+    host({
+      title: 'Toggle button component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#fff',
+      height: 30,
+      width: 220,
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state', () => (
-    <ToggleButton />
-  ))
+  .add('default state', () => <ToggleButton />)
   .add('with 2 items', () => (
     <ToggleButton
-      items={[
-        { value: 'first', label: 'first' },
-        { value: 'second', label: 'second' },
-      ]}
+      items={[{ value: 'first', label: 'first' }, { value: 'second', label: 'second' }]}
     />
   ))
   .add('with 3 items', () => (
@@ -86,5 +83,4 @@ storiesOf('Components/Buttons/toggleButton', module)
       value={'second'}
       onClickItem={action('itemClicked')}
     />
-  ))
-;
+  ));

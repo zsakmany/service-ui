@@ -17,9 +17,9 @@ export const loginAction = ({ login, password }) => (dispatch, getState) =>
     method: 'POST',
   }).then((result) => {
     localStorage.setItem(TOKEN_KEY, `${result.token_type} ${result.access_token}`);
-    dispatch(fetchUserAction())
-      .then(() => dispatch(fetchProjectAction(activeProjectSelector(getState())))
-        .then(() => dispatch(authSuccessAction()),
+    dispatch(fetchUserAction()).then(() =>
+      dispatch(fetchProjectAction(activeProjectSelector(getState()))).then(() =>
+        dispatch(authSuccessAction()),
       ),
     );
   });
@@ -30,4 +30,3 @@ export const logoutAction = () => (dispatch) => {
     type: LOGOUT,
   });
 };
-

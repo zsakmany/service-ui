@@ -25,67 +25,71 @@ import { host } from 'storybook-host';
 import { Grid } from './grid';
 import { ALIGN_CENTER } from './constants';
 
-const COLUMNS = [{
-  title: { full: 'name' },
-  formatter: ({ name }) => name,
-}, {
-  title: { full: 'total' },
-  align: ALIGN_CENTER,
-  formatter: ({ total }) => total,
-  sortable: true,
-  name: 'total',
-  withFilter: true,
-}, {
-  title: { full: 'passed' },
-  align: ALIGN_CENTER,
-  formatter: ({ passed }) => passed,
-  sortable: true,
-  name: 'passed',
-  withFilter: true,
-}, {
-  title: { full: 'failed' },
-  align: ALIGN_CENTER,
-  formatter: ({ failed }) => failed,
-}, {
-  title: { full: 'skipped' },
-  align: ALIGN_CENTER,
-  formatter: ({ skipped }) => skipped,
-}];
+const COLUMNS = [
+  {
+    title: { full: 'name' },
+    formatter: ({ name }) => name,
+  },
+  {
+    title: { full: 'total' },
+    align: ALIGN_CENTER,
+    formatter: ({ total }) => total,
+    sortable: true,
+    name: 'total',
+    withFilter: true,
+  },
+  {
+    title: { full: 'passed' },
+    align: ALIGN_CENTER,
+    formatter: ({ passed }) => passed,
+    sortable: true,
+    name: 'passed',
+    withFilter: true,
+  },
+  {
+    title: { full: 'failed' },
+    align: ALIGN_CENTER,
+    formatter: ({ failed }) => failed,
+  },
+  {
+    title: { full: 'skipped' },
+    align: ALIGN_CENTER,
+    formatter: ({ skipped }) => skipped,
+  },
+];
 
-const DATA = [{
-  name: 'foo 1',
-  description: 'some description',
-  total: 100,
-  passed: 70,
-  failed: 25,
-  skipped: 5,
-}, {
-  name: 'foo 2',
-  description: 'another description',
-  total: 10,
-  passed: 7,
-  failed: 2,
-  skipped: 1,
-}];
+const DATA = [
+  {
+    name: 'foo 1',
+    description: 'some description',
+    total: 100,
+    passed: 70,
+    failed: 25,
+    skipped: 5,
+  },
+  {
+    name: 'foo 2',
+    description: 'another description',
+    total: 10,
+    passed: 7,
+    failed: 2,
+    skipped: 1,
+  },
+];
 
 storiesOf('Components/Main/Grid', module)
-  .addDecorator(host({
-    title: 'Grid component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#fff',
-    height: 600,
-    width: '100%',
-  }))
-  .add('default state', () => (
-    <Grid />
-  ))
-  .add('with data', () => (
-    <Grid
-      columns={COLUMNS}
-      data={DATA}
-    />
-  ))
+  .addDecorator(
+    host({
+      title: 'Grid component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#fff',
+      height: 600,
+      width: '100%',
+    }),
+  )
+  .add('default state', () => <Grid />)
+  .add('with data', () => <Grid columns={COLUMNS} data={DATA} />)
   .add('with actions', () => (
     <Grid
       columns={COLUMNS}

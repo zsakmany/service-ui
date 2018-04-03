@@ -24,12 +24,12 @@
     border-color: $COLOR--booger;
 
     &:hover:not(.disabled) {
-      background-color: darken( $COLOR--booger, 15% );
-      border-color: darken( $COLOR--booger, 15% );
+      background-color: darken($COLOR--booger, 15%);
+      border-color: darken($COLOR--booger, 15%);
     }
     &:active:not(.disabled) {
-      background-color: darken( $COLOR--booger, 30% );
-      border-color: darken( $COLOR--booger, 30% );
+      background-color: darken($COLOR--booger, 30%);
+      border-color: darken($COLOR--booger, 30%);
     }
   }
   &.color-organish {
@@ -37,12 +37,12 @@
     border-color: $COLOR--organish;
 
     &:hover:not(.disabled) {
-      background-color: darken( $COLOR--organish, 15% );
-      border-color: darken( $COLOR--organish, 15% );
+      background-color: darken($COLOR--organish, 15%);
+      border-color: darken($COLOR--organish, 15%);
     }
     &:active:not(.disabled) {
-      background-color: darken( $COLOR--organish, 30% );
-      border-color: darken( $COLOR--organish, 30% );
+      background-color: darken($COLOR--organish, 30%);
+      border-color: darken($COLOR--organish, 30%);
     }
   }
   &.color-gray-60 {
@@ -50,12 +50,12 @@
     border-color: $COLOR--gray-60;
 
     &:hover:not(.disabled) {
-      background-color: darken( $COLOR--gray-60, 15% );
-      border-color: darken( $COLOR--gray-60, 15% );
+      background-color: darken($COLOR--gray-60, 15%);
+      border-color: darken($COLOR--gray-60, 15%);
     }
     &:active:not(.disabled) {
-      background-color: darken( $COLOR--gray-60, 30% );
-      border-color: darken( $COLOR--gray-60, 30% );
+      background-color: darken($COLOR--gray-60, 30%);
+      border-color: darken($COLOR--gray-60, 30%);
     }
   }
   &.color-tomato {
@@ -63,12 +63,12 @@
     border-color: $COLOR--tomato;
 
     &:hover:not(.disabled) {
-      background-color: darken( $COLOR--tomato, 15% );
-      border-color: darken( $COLOR--tomato, 15% );
+      background-color: darken($COLOR--tomato, 15%);
+      border-color: darken($COLOR--tomato, 15%);
     }
     &:active:not(.disabled) {
-      background-color: darken( $COLOR--tomato, 30% );
-      border-color: darken( $COLOR--tomato, 30% );
+      background-color: darken($COLOR--tomato, 30%);
+      border-color: darken($COLOR--tomato, 30%);
     }
   }
 }

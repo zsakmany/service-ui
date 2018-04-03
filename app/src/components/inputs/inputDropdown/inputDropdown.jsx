@@ -59,9 +59,7 @@ export class InputDropdown extends Component {
   }
   onClickSelectBlock = (e) => {
     e.stopPropagation();
-    this.props.active
-      ? (() => this.props.multiple && this.props.onBlur())()
-      : this.props.onFocus();
+    this.props.active ? (() => this.props.multiple && this.props.onBlur())() : this.props.onFocus();
   };
   handleClickOutside = (e) => {
     if (this.node.contains(e.target) && this.props.multiple) {
@@ -70,7 +68,7 @@ export class InputDropdown extends Component {
     this.props.onBlur();
   };
   renderOptions() {
-    return this.props.options.map(option => (
+    return this.props.options.map((option) => (
       <DropdownOption
         key={option.id}
         id={option.id}
@@ -88,18 +86,26 @@ export class InputDropdown extends Component {
       opened: this.props.active,
     });
     return (
-      <div ref={(node) => { this.node = node; }} className={classes}>
-        <div className={cx({ 'select-block': true, disabled: this.props.disabled })} onClick={this.onClickSelectBlock}>
-          <span className={cx('value')}>{ this.props.displayedValue }</span>
+      <div
+        ref={(node) => {
+          this.node = node;
+        }}
+        className={classes}
+      >
+        <div
+          className={cx({ 'select-block': true, disabled: this.props.disabled })}
+          onClick={this.onClickSelectBlock}
+        >
+          <span className={cx('value')}>{this.props.displayedValue}</span>
           <span className={cx('arrow')} />
         </div>
         <div className={cx('select-list')}>
-          {
-            (this.props.multiple && this.props.selectAll)
-              ? <div className={cx('select-all-block')}><span className={cx('select-all')}>All</span></div>
-              : null
-          }
-          { this.renderOptions() }
+          {this.props.multiple && this.props.selectAll ? (
+            <div className={cx('select-all-block')}>
+              <span className={cx('select-all')}>All</span>
+            </div>
+          ) : null}
+          {this.renderOptions()}
         </div>
       </div>
     );

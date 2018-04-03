@@ -14,12 +14,10 @@ export const AdminLayout = ({ children }) => (
       <Sidebar />
     </div>
     <div className={cx('content')}>
-      <div className={cx('header-container')} >
+      <div className={cx('header-container')}>
         <AdminHeader />
       </div>
-      <div className={cx('page-container')}>
-        {children}
-      </div>
+      <div className={cx('page-container')}>{children}</div>
     </div>
     <Notification />
   </div>

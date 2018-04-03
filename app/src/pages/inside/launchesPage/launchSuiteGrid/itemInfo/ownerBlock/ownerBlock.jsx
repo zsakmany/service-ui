@@ -15,7 +15,9 @@ const messages = defineMessages({
 export const OwnerBlock = injectIntl(({ intl, owner }) => (
   <div className={cx('owner-block')} title={intl.formatMessage(messages.ownerTitle)}>
     <div className={cx('owner-icon')} />
-    <a href="/" className={cx('owner')}>{ owner }</a>
+    <a href="/" className={cx('owner')}>
+      {owner}
+    </a>
   </div>
 ));
 

@@ -34,9 +34,9 @@
       fill: $COLOR--topaz !important;
     }
 
-    &:hover{
-      background-color: lighten( $COLOR--topaz, 10% );
-      border-color: lighten( $COLOR--topaz, 10% );
+    &:hover {
+      background-color: lighten($COLOR--topaz, 10%);
+      border-color: lighten($COLOR--topaz, 10%);
       color: $COLOR--white-two;
 
       path {

@@ -25,7 +25,9 @@
     display: none;
   }
 }
-.passed, .total, .duration {
+.passed,
+.total,
+.duration {
   display: inline-block;
   margin-right: 15px;
   font-family: $FONT-REGULAR;
@@ -35,7 +37,8 @@
   vertical-align: top;
   line-height: 28px;
 }
-.passed, .total {
+.passed,
+.total {
   @media (max-width: $SCREEN_SM_MAX) {
     &::after {
       content: '';

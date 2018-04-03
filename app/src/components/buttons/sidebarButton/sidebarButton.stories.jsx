@@ -29,21 +29,19 @@ import README from './README.md';
 import TestIcon from './img/test-icon-inline.svg';
 
 storiesOf('Components/Buttons/sidebarButton', module)
-  .addDecorator(host({
-    title: 'sidebarButton component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#ffffff',
-    height: 50,
-    width: 150,
-  }))
+  .addDecorator(
+    host({
+      title: 'sidebarButton component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#ffffff',
+      height: 50,
+      width: 150,
+    }),
+  )
   .addDecorator(withReadme(README))
-  .addDecorator(story => (
-    <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
-  ))
-  .add('default state', () => (
-    <SidebarButton />
-  ))
+  .addDecorator((story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>)
+  .add('default state', () => <SidebarButton />)
   .add('with props', () => (
     <SidebarButton icon={TestIcon} link="/some_route">
       Nav Button
@@ -53,5 +51,4 @@ storiesOf('Components/Buttons/sidebarButton', module)
     <SidebarButton icon={TestIcon} link="/some_route" onClick={action('clicked')}>
       Nav Button
     </SidebarButton>
-  ))
-;
+  ));

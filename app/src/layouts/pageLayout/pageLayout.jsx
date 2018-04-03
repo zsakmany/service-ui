@@ -7,9 +7,7 @@ const cx = classNames.bind(styles);
 export const PageLayout = ({ title, children }) => (
   <div className={cx('page-layout')}>
     {title ? <PageTitle title={title} /> : null}
-    <div className={cx('page-content')}>
-      {children}
-    </div>
+    <div className={cx('page-content')}>{children}</div>
   </div>
 );
 PageLayout.propTypes = {
@@ -21,11 +19,7 @@ PageLayout.defaultProps = {
   children: null,
 };
 
-const PageTitle = ({ title }) => (
-  <div className={cx('page-title')}>
-    {title}
-  </div>
-);
+const PageTitle = ({ title }) => <div className={cx('page-title')}>{title}</div>;
 PageTitle.propTypes = {
   title: PropTypes.node,
 };

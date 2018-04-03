@@ -87,14 +87,13 @@ export class PersonalInfoBlock extends Component {
       }
     }
   };
-  validateFileExtension = file => (/\.(gif|jpg|jpeg|png)$/i).test(file.name);
+  validateFileExtension = (file) => /\.(gif|jpg|jpeg|png)$/i.test(file.name);
   validateImageSize = (image, file) => {
     const width = image.width;
     const height = image.height;
     const size = Math.floor(file.size / 1024);
     return size <= 1000 && width <= 300 && height <= 500;
   };
-
 
   render() {
     // const xhr = new XMLHttpRequest();
@@ -112,7 +111,10 @@ export class PersonalInfoBlock extends Component {
     return (
       <div className={cx('personal-info-block')}>
         <BlockContainerHeader>
-          <FormattedMessage id={'PersonalInfoBlock.header'} defaultMessage={'Personal information'} />
+          <FormattedMessage
+            id={'PersonalInfoBlock.header'}
+            defaultMessage={'Personal information'}
+          />
         </BlockContainerHeader>
         <BlockContainerBody>
           <div className={cx('block-content')}>
@@ -120,31 +122,50 @@ export class PersonalInfoBlock extends Component {
               <img className={cx('avatar')} src={this.state.avatarSource} alt="Profile avatar" />
             </div>
             <div className={cx('info')}>
-              <div className={cx('login')}>
-                { this.props.login }
-              </div>
+              <div className={cx('login')}>{this.props.login}</div>
               <div className={cx('name-field')}>
                 <span className={cx('name')}>
-                  { this.props.name }
-                  <i className={cx('name-pencil-icon')} dangerouslySetInnerHTML={{ __html: PencilIcon }} />
+                  {this.props.name}
+                  <i
+                    className={cx('name-pencil-icon')}
+                    dangerouslySetInnerHTML={{ __html: PencilIcon }}
+                  />
                 </span>
               </div>
               <div className={cx('email')}>
-                { this.props.email }
-                { <i className={cx('email-pencil-icon')} dangerouslySetInnerHTML={{ __html: PencilIcon }} /> }
+                {this.props.email}
+                {
+                  <i
+                    className={cx('email-pencil-icon')}
+                    dangerouslySetInnerHTML={{ __html: PencilIcon }}
+                  />
+                }
               </div>
               <div className={cx('photo-controls')}>
                 <div className={cx('input-file')}>
-                  <input ref={(inputFile) => { this.fileSelector = inputFile; }} onChange={this.selectPhotoHandler} type="file" accept="image/gif, image/jpeg, image/png" />
+                  <input
+                    ref={(inputFile) => {
+                      this.fileSelector = inputFile;
+                    }}
+                    onChange={this.selectPhotoHandler}
+                    type="file"
+                    accept="image/gif, image/jpeg, image/png"
+                  />
                 </div>
                 <div className={cx('photo-btn')}>
                   <GhostButton onClick={this.onClickUploadPhoto}>
-                    <FormattedMessage id={'PersonalInfoBlock.uploadPhoto'} defaultMessage={'Upload photo'} />
+                    <FormattedMessage
+                      id={'PersonalInfoBlock.uploadPhoto'}
+                      defaultMessage={'Upload photo'}
+                    />
                   </GhostButton>
                 </div>
                 <div className={cx('photo-btn')}>
                   <GhostButton>
-                    <FormattedMessage id={'PersonalInfoBlock.removePhoto'} defaultMessage={'Remove photo'} />
+                    <FormattedMessage
+                      id={'PersonalInfoBlock.removePhoto'}
+                      defaultMessage={'Remove photo'}
+                    />
                   </GhostButton>
                 </div>
               </div>
@@ -152,10 +173,12 @@ export class PersonalInfoBlock extends Component {
 
             <div className={cx('change-pass-btn')}>
               <GhostButton>
-                <FormattedMessage id={'PersonalInfoBlock.changePassword'} defaultMessage={'Change password'} />
+                <FormattedMessage
+                  id={'PersonalInfoBlock.changePassword'}
+                  defaultMessage={'Change password'}
+                />
               </GhostButton>
             </div>
-
           </div>
         </BlockContainerBody>
       </div>

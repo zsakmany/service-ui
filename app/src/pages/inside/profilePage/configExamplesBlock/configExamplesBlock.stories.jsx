@@ -26,16 +26,15 @@ import ConfigExamplesBlock from './configExamplesBlock';
 import README from './README.md';
 
 storiesOf('Pages/inside/profilePage/configExamplesBlock', module)
-  .addDecorator(host({
-    title: 'Assigned projects table on profile page',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#f5f5f5',
-    height: 'auto',
-    width: '70%',
-  }))
+  .addDecorator(
+    host({
+      title: 'Assigned projects table on profile page',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#f5f5f5',
+      height: 'auto',
+      width: '70%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state', () => (
-    <ConfigExamplesBlock />
-  ))
-;
+  .add('default state', () => <ConfigExamplesBlock />);

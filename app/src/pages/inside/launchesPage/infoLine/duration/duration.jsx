@@ -17,8 +17,6 @@ export class Duration extends Component {
   };
 
   render() {
-    return (
-      <span className={cx('duration')}>{ this.props.duration }</span>
-    );
+    return <span className={cx('duration')}>{this.props.duration}</span>;
   }
 }

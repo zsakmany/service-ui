@@ -6,7 +6,7 @@ uri - url for request to get items,<br/>
 options - should be provided as an Array of Objects, each with a value and label property for rendering and searching.<br/>
 values - array of selected by default options,<br/>
 focusPlaceholder - uses in Async component, label to prompt for search input,<br/>
-loadingPlaceholder -  label to prompt for loading search result,<br/>
+loadingPlaceholder - label to prompt for loading search result,<br/>
 nothingFound - placeholder displayed when there are no matching search results or a falsy value to hide it (can also be a react component),<br/>
 isCreatable - defines user possibility to create new option,<br/>
 isAsync - make component asynchronous, allows loading items using uri,<br/>

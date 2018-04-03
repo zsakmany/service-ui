@@ -13,8 +13,7 @@ export class PageSizeControl extends Component {
   };
 
   static defaultProps = {
-    onChangePageSize: () => {
-    },
+    onChangePageSize: () => {},
   };
 
   state = {
@@ -27,7 +26,7 @@ export class PageSizeControl extends Component {
       this.inputNode.focus();
     });
 
-  handleChange = e => this.setState({ inputValue: e.target.value });
+  handleChange = (e) => this.setState({ inputValue: e.target.value });
 
   handleEnterKey = (e) => {
     const value = this.state.inputValue;
@@ -40,15 +39,21 @@ export class PageSizeControl extends Component {
   render() {
     return (
       <div className={cx('page-size', { 'input-visible': this.state.inputVisible })}>
-        {this.state.inputVisible
-          ? <SizeInput
-            inputRef={(node) => { this.inputNode = node; }}
+        {this.state.inputVisible ? (
+          <SizeInput
+            inputRef={(node) => {
+              this.inputNode = node;
+            }}
             value={this.state.inputValue}
             onChange={this.handleChange}
             onKeyUp={this.handleEnterKey}
           />
-          : <span className={cx('size-text')} onClick={this.showInput}>{this.props.pageSize}</span>
-        } per page
+        ) : (
+          <span className={cx('size-text')} onClick={this.showInput}>
+            {this.props.pageSize}
+          </span>
+        )}{' '}
+        per page
       </div>
     );
   }

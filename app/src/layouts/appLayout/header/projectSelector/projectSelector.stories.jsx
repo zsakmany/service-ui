@@ -56,18 +56,18 @@ const mockProjectsListLong = [
 ];
 
 storiesOf('Components/Main/projectSelector', module)
-  .addDecorator(host({
-    title: 'Project selector component',
-    align: 'center top',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: 'black',
-    height: '60px',
-    width: '70%',
-  }))
+  .addDecorator(
+    host({
+      title: 'Project selector component',
+      align: 'center top',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: 'black',
+      height: '60px',
+      width: '70%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state', () => (
-    <ProjectSelector />
-  ))
+  .add('default state', () => <ProjectSelector />)
   .add('with data', () => (
     <ProjectSelector projects={mockProjectsList} activeProject="Default_active" />
   ))
@@ -75,6 +75,9 @@ storiesOf('Components/Main/projectSelector', module)
     <ProjectSelector projects={mockProjectsListLong} activeProject="Project-10" />
   ))
   .add('with actions', () => (
-    <ProjectSelector projects={mockProjectsList} activeProject="Default_active" onChange={action('project changed')} />
-  ))
-;
+    <ProjectSelector
+      projects={mockProjectsList}
+      activeProject="Default_active"
+      onChange={action('project changed')}
+    />
+  ));

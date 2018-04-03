@@ -25,48 +25,28 @@ import { host } from 'storybook-host';
 import { PaginationToolbar } from './paginationToolbar';
 
 storiesOf('Components/Main/PaginationToolbar', module)
-  .addDecorator(host({
-    title: 'Pagination toolbar component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#fff',
-    height: 60,
-    width: '100%',
-  }))
-  .add('default state', () => (
-    <PaginationToolbar />
-  ))
+  .addDecorator(
+    host({
+      title: 'Pagination toolbar component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#fff',
+      height: 60,
+      width: '100%',
+    }),
+  )
+  .add('default state', () => <PaginationToolbar />)
   .add('with pages', () => (
-    <PaginationToolbar
-      itemCount={470}
-      activePage={1}
-      pageCount={10}
-      pageSize={50}
-    />
+    <PaginationToolbar itemCount={470} activePage={1} pageCount={10} pageSize={50} />
   ))
   .add('with many pages at start', () => (
-    <PaginationToolbar
-      itemCount={470}
-      activePage={1}
-      pageCount={20}
-      pageSize={50}
-    />
+    <PaginationToolbar itemCount={470} activePage={1} pageCount={20} pageSize={50} />
   ))
   .add('with many pages at the middle', () => (
-    <PaginationToolbar
-      itemCount={470}
-      activePage={7}
-      pageCount={20}
-      pageSize={50}
-    />
+    <PaginationToolbar itemCount={470} activePage={7} pageCount={20} pageSize={50} />
   ))
   .add('with many pages at the end', () => (
-    <PaginationToolbar
-      itemCount={470}
-      activePage={20}
-      pageCount={20}
-      pageSize={50}
-    />
+    <PaginationToolbar itemCount={470} activePage={20} pageCount={20} pageSize={50} />
   ))
   .add('with actions', () => (
     <PaginationToolbar

@@ -39,7 +39,6 @@ Grid.defaultProps = {
   data: [],
   sortingDirection: null,
   sortingColumn: null,
-  onChangeSorting: () => {
-  },
+  onChangeSorting: () => {},
   onFilterClick: () => {},
 };

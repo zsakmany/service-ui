@@ -27,18 +27,18 @@ import { FilterTableItem } from './filterTableItem';
 import README from './README.md';
 
 storiesOf('Pages/inside/filtersPage/filterTableItem', module)
-  .addDecorator(host({
-    title: 'Filter table item component',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#fff',
-    height: 'auto',
-    width: '80%',
-  }))
+  .addDecorator(
+    host({
+      title: 'Filter table item component',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#fff',
+      height: 'auto',
+      width: '80%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state', () => (
-    <FilterTableItem />
-  ))
+  .add('default state', () => <FilterTableItem />)
   .add('with data', () => (
     <FilterTableItem
       name="Filter Name 1"
@@ -75,5 +75,4 @@ storiesOf('Pages/inside/filtersPage/filterTableItem', module)
       onChangeDisplay={action('Changed displaying on launches')}
       onDelete={action('Clicked delete filter')}
     />
-  ))
-;
+  ));

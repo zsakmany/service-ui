@@ -266,6 +266,5 @@ LaunchSuiteGrid.defaultProps = {
   data: {},
   sortingColumn: null,
   sortingDirection: null,
-  onChangeSorting: () => {
-  },
+  onChangeSorting: () => {},
 };

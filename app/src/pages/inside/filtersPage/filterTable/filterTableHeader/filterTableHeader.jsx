@@ -19,7 +19,10 @@ export const FilterTableHeader = () => (
       <FormattedMessage id="FilterTableItem.header.shared" defaultMessage="Shared" />
     </div>
     <div className={cx('header-cell', 'display-on-launches-cell')}>
-      <FormattedMessage id="FilterTableItem.header.displayOnLaunches" defaultMessage="Display on launches" />
+      <FormattedMessage
+        id="FilterTableItem.header.displayOnLaunches"
+        defaultMessage="Display on launches"
+      />
     </div>
     <div className={cx('header-cell', 'delete-cell')}>
       <FormattedMessage id="FilterTableItem.header.delete" defaultMessage="Delete" />

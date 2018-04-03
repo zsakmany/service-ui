@@ -4,14 +4,10 @@ import { connect } from 'react-redux';
 import { fetchInfoAction } from 'controllers/appInfo';
 import { fetchProjectAction } from 'controllers/project';
 import { fetchUserAction, activeProjectSelector } from 'controllers/user';
-import {
-  TOKEN_KEY,
-  DEFAULT_TOKEN,
-  authSuccessAction,
-} from 'controllers/auth';
+import { TOKEN_KEY, DEFAULT_TOKEN, authSuccessAction } from 'controllers/auth';
 
 @connect(
-  state => ({
+  (state) => ({
     activeProject: activeProjectSelector(state),
   }),
   {
@@ -45,20 +41,20 @@ export class InitialDataContainer extends Component {
     if (!token) {
       localStorage.setItem(TOKEN_KEY, DEFAULT_TOKEN);
     }
-    const userPromise = this.props.fetchUserAction()
-      .then(() => this.props.fetchProjectAction(this.props.activeProject)
+    const userPromise = this.props
+      .fetchUserAction()
+      .then(() =>
+        this.props
+          .fetchProjectAction(this.props.activeProject)
           .then(() => this.props.authSuccessAction()),
       )
       .catch(() => {
         localStorage.setItem(TOKEN_KEY, DEFAULT_TOKEN);
       });
-    Promise.all([infoPromise, userPromise])
-      .then(() => this.setState({ initialDataReady: true }));
+    Promise.all([infoPromise, userPromise]).then(() => this.setState({ initialDataReady: true }));
   }
 
   render() {
-    return (
-      this.state.initialDataReady ? this.props.children : <span>Loading...</span>
-    );
+    return this.state.initialDataReady ? this.props.children : <span>Loading...</span>;
   }
 }

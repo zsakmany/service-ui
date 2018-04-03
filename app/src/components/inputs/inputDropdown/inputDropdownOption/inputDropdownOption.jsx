@@ -33,11 +33,13 @@ export const DropdownOption = ({ multiple, text, disabled, active }) => {
   });
   return (
     <div className={dropdownOptionClasses}>
-      {
-        multiple
-          ? <InputCheckbox value={active} disabled={disabled} >{text}</InputCheckbox>
-          : <div className={cx('single-option')}>{text}</div>
-      }
+      {multiple ? (
+        <InputCheckbox value={active} disabled={disabled}>
+          {text}
+        </InputCheckbox>
+      ) : (
+        <div className={cx('single-option')}>{text}</div>
+      )}
     </div>
   );
 };

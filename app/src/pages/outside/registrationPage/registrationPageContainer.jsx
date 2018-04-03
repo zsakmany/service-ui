@@ -34,12 +34,13 @@ export class RegistrationPageContainer extends PureComponent {
     if (!uuid) {
       return;
     }
-    fetch(REGISTRATION_URL, { params: { uuid } })
-      .then(data => this.setState({
+    fetch(REGISTRATION_URL, { params: { uuid } }).then((data) =>
+      this.setState({
         isTokenActive: data.isActive,
         email: data.email,
         isLoadingFinished: true,
-      }));
+      }),
+    );
   }
 
   registrationHandler = ({ name, login, password, email }) => {
@@ -50,21 +51,20 @@ export class RegistrationPageContainer extends PureComponent {
       password,
       email,
     };
-    fetch(REGISTRATION_URL, { method: 'post', data, params: { uuid } })
-      .then(() => this.props.loginAction({ login, password }));
+    fetch(REGISTRATION_URL, { method: 'post', data, params: { uuid } }).then(() =>
+      this.props.loginAction({ login, password }),
+    );
   };
 
   render() {
     const uuid = this.props.location.query.uuid;
-    return (
-      !uuid || this.state.isLoadingFinished
-        ? <RegistrationPage
-          tokenProvided={Boolean(uuid)}
-          tokenActive={this.state.isTokenActive}
-          email={this.state.email}
-          onRegistrationSubmit={this.registrationHandler}
-        />
-        : null
-    );
+    return !uuid || this.state.isLoadingFinished ? (
+      <RegistrationPage
+        tokenProvided={Boolean(uuid)}
+        tokenActive={this.state.isTokenActive}
+        email={this.state.email}
+        onRegistrationSubmit={this.registrationHandler}
+      />
+    ) : null;
   }
 }

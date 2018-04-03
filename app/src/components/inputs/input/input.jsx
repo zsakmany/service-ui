@@ -26,8 +26,18 @@ import styles from './input.scss';
 const cx = classNames.bind(styles);
 
 export const Input = ({
-  type, value, readonly, error, placeholder, maxLength,
-  disabled, refFunction, onChange, onFocus, onBlur, onKeyUp,
+  type,
+  value,
+  readonly,
+  error,
+  placeholder,
+  maxLength,
+  disabled,
+  refFunction,
+  onChange,
+  onFocus,
+  onBlur,
+  onKeyUp,
 }) => (
   <input
     ref={refFunction}

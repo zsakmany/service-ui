@@ -37,8 +37,8 @@ const getPhoto = (userId) => {
   return addTokenToImagePath(`/api/v1/data/userphoto?${stringify(qsParams, { encode: false })}`);
 };
 const isValidNewOption = ({ label }) => validate.email(label);
-const newOptionCreator = option => ({ externalUser: true, label: option.label });
-const promptTextCreator = label => (label);
+const newOptionCreator = (option) => ({ externalUser: true, label: option.label });
+const promptTextCreator = (label) => label;
 const makeURL = (input, isAdmin, projectId) => {
   const qsParams = {
     'page.page': 1,
@@ -61,22 +61,22 @@ const makeURL = (input, isAdmin, projectId) => {
   startUrl += `?${stringify(qsParams, { encode: false })}`;
   return startUrl;
 };
-const makeOptions = (options, projectId) => options.map(option => ({
-  userName: option.full_name || '',
-  userLogin: option.userId,
-  email: option.email || '',
-  disabled: Object.prototype.hasOwnProperty.call(option.assigned_projects, projectId),
-  isAssigned: Object.prototype.hasOwnProperty.call(option.assigned_projects, projectId),
-  userAvatar: getPhoto(option.userId),
-}));
+const makeOptions = (options, projectId) =>
+  options.map((option) => ({
+    userName: option.full_name || '',
+    userLogin: option.userId,
+    email: option.email || '',
+    disabled: Object.prototype.hasOwnProperty.call(option.assigned_projects, projectId),
+    isAssigned: Object.prototype.hasOwnProperty.call(option.assigned_projects, projectId),
+    userAvatar: getPhoto(option.userId),
+  }));
 const getUsers = (input, isAdmin, projectId) => {
   if (input) {
     const url = makeURL(input, isAdmin, projectId);
-    return fetch(url)
-      .then((response) => {
-        const arr = makeOptions(response.content, projectId);
-        return ({ options: arr });
-      });
+    return fetch(url).then((response) => {
+      const arr = makeOptions(response.content, projectId);
+      return { options: arr };
+    });
   }
   return Promise.resolve({ options: [] });
 };
@@ -85,14 +85,26 @@ export const InputUserSearch = ({ isAdmin, onChange, projectId }) => (
   <Select.AsyncCreatable
     cache={false}
     className={cx('select2-search-users')}
-    loadOptions={input => (getUsers(input, isAdmin, projectId))}
-    filterOption={() => (true)}
-    loadingPlaceholder={<FormattedMessage id={'InputUserSearch.searching'} defaultMessage={'Searching...'} />}
-    noResultsText={<FormattedMessage id={'InputUserSearch.noResults'} defaultMessage={'No matches found'} />}
-    searchPromptText={<FormattedMessage id={'InputUserSearch.placeholder'} defaultMessage={'Please enter 1 or more character'} />}
-    onChange={(option) => { onChange(option); }}
+    loadOptions={(input) => getUsers(input, isAdmin, projectId)}
+    filterOption={() => true}
+    loadingPlaceholder={
+      <FormattedMessage id={'InputUserSearch.searching'} defaultMessage={'Searching...'} />
+    }
+    noResultsText={
+      <FormattedMessage id={'InputUserSearch.noResults'} defaultMessage={'No matches found'} />
+    }
+    searchPromptText={
+      <FormattedMessage
+        id={'InputUserSearch.placeholder'}
+        defaultMessage={'Please enter 1 or more character'}
+      />
+    }
+    onChange={(option) => {
+      onChange(option);
+    }}
     menuRenderer={({ focusOption, options, selectValue }) =>
-      (UsersList({ focusOption, options, selectValue }))}
+      UsersList({ focusOption, options, selectValue })
+    }
     isValidNewOption={isValidNewOption}
     newOptionCreator={newOptionCreator}
     promptTextCreator={promptTextCreator}

@@ -28,20 +28,25 @@ import bigAvatar from './storiesImg/big.jpg';
 import smallAvatar from './storiesImg/small.jpg';
 
 storiesOf('Pages/inside/profilePage/personalInfoBlock', module)
-  .addDecorator(host({
-    title: 'Personal info form on profile page',
-    align: 'center middle',
-    backdrop: 'rgba(70, 69, 71, 0.2)',
-    background: '#f5f5f5',
-    height: 'auto',
-    width: '70%',
-  }))
+  .addDecorator(
+    host({
+      title: 'Personal info form on profile page',
+      align: 'center middle',
+      backdrop: 'rgba(70, 69, 71, 0.2)',
+      background: '#f5f5f5',
+      height: 'auto',
+      width: '70%',
+    }),
+  )
   .addDecorator(withReadme(README))
-  .add('default state (no provided info)', () => (
-    <PersonalInfoBlock />
-  ))
+  .add('default state (no provided info)', () => <PersonalInfoBlock />)
   .add('with info', () => (
-    <PersonalInfoBlock login="superadmin" name="RP Admin" email="superadmin@email.com" photoSrc={bigAvatar} />
+    <PersonalInfoBlock
+      login="superadmin"
+      name="RP Admin"
+      email="superadmin@email.com"
+      photoSrc={bigAvatar}
+    />
   ))
   .add('with extreme info', () => (
     <PersonalInfoBlock
@@ -50,5 +55,4 @@ storiesOf('Pages/inside/profilePage/personalInfoBlock', module)
       email="superadminsuperadminsuperadminsuperadminsuperadminsuperadminsuperadminsuperadmin@email.com"
       photoSrc={smallAvatar}
     />
-  ))
-;
+  ));
