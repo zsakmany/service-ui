@@ -498,7 +498,7 @@
   "WidgetHeader.widgetMode.trendChartMode": "Тэндэнцыйны выгляд",
   "WidgetHeader.widgetType.activity_stream": "Панэль дзейнасці праекта",
   "WidgetHeader.widgetType.bug_trend": "Статыстыка выканання запускаў і праблем",
-  "WidgetHeader.widgetType.cases_trend": "Дыяграма тэндэнцый росту колькасці тэставых сцэнароў",
+  "WidgetHeader.widgetType.cases_trend": "Дыяграма тэндэнцый росту колькасці тэставых сцэнарыяў",
   "WidgetHeader.widgetType.cumulative": "Кумулятыўная дыяграма",
   "WidgetHeader.widgetType.flaky_test_cases": "Табліца самых зменлівых тэставых сцэнарыяў (ТОП-20)",
   "WidgetHeader.widgetType.investigated_trend": "Даследаваны адсотак запускаў",
